@@ -159,6 +159,10 @@ footer{
     margin: auto auto;
 }
 
+.hide{
+    display: none;
+}
+
 
 /* PRODUCTS PAGE */
 

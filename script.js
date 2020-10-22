@@ -9,17 +9,19 @@ butt.forEach(myfunction)
 
 function myfunction(button){
     button.addEventListener('click', () => {
-        let content = []
+        let content = {}
         let name = button.previousSibling.previousSibling.previousSibling.previousSibling.innerHTML;
         console.log(name)
-        content.push(name)
+        // content.push(name)
+        content.name = name;
         let price = button.previousSibling.previousSibling.innerHTML
         // console.log(name)
-        content.push(price)
+        // content.push(price)
         // console.log(content)
+        content.price = price;
         
         console.log(content)
-        console.log(content.length)
+        // console.log(content.length)
         addToLocaleStorage(content)
        
         

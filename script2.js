@@ -20,9 +20,9 @@ todos.forEach(item => {
         td[i]  = document.createElement('td');
     };
     
-    td[1].innerHTML = `${item[0]}`
+    td[1].innerHTML = `${item.name}`
     
-    td[2].innerHTML = `${item[1]}`
+    td[2].innerHTML = `${item.price}`
     td[3].innerHTML =  `<a href=# class="delete">delete</a>`
     let row = document.createElement('tr');
     td.forEach(tds => {
@@ -45,14 +45,20 @@ todos.forEach(item => {
 let clear = document.querySelectorAll('.delete')
 clear.forEach(item => {
     item.addEventListener('click', () => {
-        let del_item = []
+        let del_item = {}
+
+        let name = item.parentElement.previousSibling.previousSibling.innerHTML
+
+        del_item.name = name
+        let price = item.parentElement.previousSibling.innerHTML
+        del_item.price = price
+        let removed = item.parentElement.parentElement
+        removed.classList.add('hide');
         
-           let name = item.parentElement.previousSibling.previousSibling.innerHTML
-           del_item.push(name)
-           let price = item.parentElement.previousSibling.innerHTML
-           del_item.push(price)
-           removeFromStoreage(del_item)
-        //    console.log(del_item)
+
+
+        console.log(typeof(del_item))
+        removeFromStoreage(del_item)
 
         
     } )
@@ -65,20 +71,16 @@ function removeFromStoreage(todo){
         todos=[]
     }else{
         todos = JSON.parse(localStorage.getItem('todos'))
+      
     }
-    // console.log(todos.indexOf('[["dm", "458"]]'))
-    console.log(todos)
-    // console.log(typeof(todo))
+    
+ 
+    let undeleted_items = todos.filter(x => x.name !== todo.name)
+  
+    
+    localStorage.setItem('todos', JSON.stringify(undeleted_items))
 
-    // todos.forEach(tod => {
-    //     console.log(typeof(tod))
-    // })
-    // console.log(todos[0])
-    // console.log(todos[1])
-    // console.log(todo)
-    // console.log(todos)
-    // let found = todos.prototype.includes(todo)
-    // console.log(found)
+ 
 
 }
 
