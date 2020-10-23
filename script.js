@@ -1,4 +1,5 @@
 let butt = document.querySelectorAll('.content button');
+let item = document.querySelector('.item');
 
 butt.forEach(myfunction)
 
@@ -14,6 +15,13 @@ function myfunction(button){
         let img = button.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.src
         content.img = img
         addToLocaleStorage(content)
+        item.innerHTML = `item ${name} was added to the cart`
+        item.classList.add('item_background')
+        setTimeout(function(){
+            item.innerHTML = ''
+            item.classList.remove('item_background')
+           
+        }, 3000)
 
 
         

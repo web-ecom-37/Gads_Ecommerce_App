@@ -210,12 +210,29 @@ footer{
 }
 
 
+.item{
+    position: fixed;
+    font-size: 18px;
+    padding:0.5em;
+    border-radius: 10px;
+    bottom:0;
+    right:0;
+    
+}
+
+.item_background{
+    background:orange;
+    
+}
+
+
 /* carts image */
 
 .container_3{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 600px 2fr
+    grid-template-rows: auto auto 2fr;
+    height: 100%;
 }
 
 

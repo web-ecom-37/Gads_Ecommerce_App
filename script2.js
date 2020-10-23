@@ -23,7 +23,7 @@ todos.forEach(item => {
     td[1].innerHTML = `${item.name}`
     
     td[2].innerHTML = `${item.price}`
-    td[3].innerHTML =  `<a href=# class="delete">delete</a>`
+    td[3].innerHTML =  `<button class='delete'>delete</button>`
     let row = document.createElement('tr');
     td.forEach(tds => {
         row.appendChild(tds)
