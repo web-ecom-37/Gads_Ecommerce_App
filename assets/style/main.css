@@ -1,0 +1,401 @@
+/* @import url('https://fonts.googleapis.com/css?family=Nunito'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0;
+    font-family: 'Nunito', sans-serif,fantasy;
+}
+/* ======= header and navbar start here ========== */
+header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    background: #2F303A;
+}
+header > div{
+    padding-left: 100px !important;
+}
+header > div h1.page-logo{
+    font-size: 2.5em;
+}
+header > div h1.page-logo > a {
+    color: #fff;
+    text-transform: capitalize;
+}
+header > div div.page-logo > a.nav-link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+header > nav {
+    padding-left: 150px;
+}
+header nav > ul.nav-list{
+    list-style-type: none;
+}
+header nav > ul.nav-list > li{
+    float: left;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+header nav > ul > li > a.nav-link{
+    color: #fff;
+}
+/* ======= header and navbar end here  ========== */
+
+main section div.body-banner{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../imgs/hero_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main section div.body-banner > div#body-contents{
+    text-align: center;
+    padding: 100px 0px 10px 0px;
+    color: #fff;    
+    position: relative;
+    animation: slide-in 2s;
+}
+@keyframes slide-in{
+    from{ bottom:-500px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+main section div.body-banner > div#body-contents > div > p {
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+main section div.body-banner > div#body-contents > div > h1{
+    font-size: 5em;
+    text-transform: capitalize;
+    font-weight: 900 !important;
+}
+
+main section div.body-banner > div#body-contents > div  + div#btn-holder{
+    height: auto;
+    display:  grid;
+    grid-template-columns: 20% 20%;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-shop-now{
+    display: block;
+    height: 3.7em;
+    background: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-shop-now:hover{
+    background: #fff;
+    color: #000;
+}
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-membership{
+    display: block;
+    height: 3.7em;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: bolder;
+}
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-membership:hover{
+    background: inherit;
+    color: #fff;
+}
+/* ======= style for home page end here ==========  */
+
+/* ======= style about product page start here ==========  */
+section div.product-con{
+    padding: 0px 100px;
+}
+section div div p.product-article{
+    margin: 0px auto;
+    color: #8B8080;
+    width: 50%;
+}
+section div.product-container{
+    height: auto;
+    width: 100%;
+}
+section div.product-container div.product-items{
+   display: grid;
+   grid-template-columns: repeat(3, 30%);
+   gap: 50px;
+   align-items: center;
+   justify-content: center;
+}
+section div div.product-items div figure > img.products{
+    height: auto;
+    max-width: 100%;
+}
+section div div.product-items div h3 > a.product-name-link{
+    color: #000;
+    font-size: 15px;
+    font-weight: bolder;
+}
+section div div.product-items div h3 > a.product-name-link:hover{
+    color: #475BBC;
+}
+section div div.product-items div p{
+    color: #8B8080;
+}
+section div div.product-items div > div.btn-cart-view{
+    display: grid;
+    grid-template-columns: repeat(2,30%);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+section div div.product-items div > div.btn-cart-view > button, button.btn-details,button.btn-learn-more{
+    text-transform: uppercase;
+    outline: none;
+}
+section div div.product-items div > div.btn-cart-view > button.btn-cart, button.btn-add-to-cart,button.btn-learn-more{
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+}
+section div div.product-items div > div.btn-cart-view > button.btn-view, 
+button.btn-view-details{
+    border: 2px solid #000;
+    background: #fff;
+}
+section div div.product-items div > div.btn-cart-view > button.btn-cart:hover, 
+button.btn-add-to-cart:hover,button.btn-learn-more:hover{
+    background: #fff;
+    color: #000 !important;
+}
+section div div.product-items div > div.btn-cart-view > button.btn-view:hover, 
+button.btn-view-details:hover{
+    background: #000;
+    color: #fff !important;
+}
+section > div.product-details-page{
+    background: #F8F9FA;
+}
+section > div.product-details-page > div.product-1{
+    width: 80%;
+    background: #fff;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 20px;
+    justify-content: center;
+}
+section > div.product-details-page > div.product-1 > figure > img{
+    height: auto;
+    width: 100%;
+}
+section > div.product-details-page > div.product-1 div.product1-details > h1{
+    font-weight: bolder;
+}
+section > div.product-details-page > div.product-1 div.product1-details > p {
+    text-align: left;
+    color: #8B8080;
+}
+section > div.product-details-page > div.product-1 div.product1-details > div > div{
+    color: #8B8080;
+}
+section > div.product-details-page > div.product-1 div.product1-details > div div ~ div{
+    display: grid;
+    grid-template-columns: repeat(2,30%);
+    gap: 10px;
+}
+/* ======= style about product page end here ==========  */
+
+/* ========== style about page start here ============= */
+section div div.about-holder {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 60px;
+    padding: 0px 100px;
+    align-items: center;
+}
+section div div.about-holder div > figure img {
+    height: auto;
+    width: 100%;
+}
+.trusted-machant{
+    transform: translate(26em, -6em); background: #46DDB0; width: 50%;
+}
+section div div.about-holder > div + div  > h5, p.about-article{
+    color: #8B8080;
+}
+/* ========== style about page end here ============= */
+
+/* ========== style for team page start here ============= */
+section div.con-team{
+    padding: 0px 100px;
+}
+section div.con-team div.team-row{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+section div.con-team div.team-row div > figure > img{
+    height: auto;
+    max-width: 100%;
+}
+/* ========== style for team page end here ============= */
+
+/* ======= contact page start here ========== */
+section div.contact-con{
+    padding: 50px 100px;
+    background: #F8F9FA;
+}
+section div.contact-con div.contact-us{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 60px;
+    margin: 0px auto;
+}
+section div.contact-con div.contact-us > div.form-con, div.contact-address{
+    background: #fff;
+}
+section div.contact-con div.contact-us div div > div.socail-media-handle{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 10px;
+    justify-items: center;
+}
+/* ======= contact page end here ========== */
+/* ======= footer page start here ========== */
+footer{
+    color: #fff;
+}
+/* ======= footer page end here ========== */
+i{
+    cursor: pointer;
+}
+
+
+
+
+
+/* ==== media query for mobile view =========== */
+@media screen and (max-width: 800px) and (min-width:200px) {
+    main section div.body-banner > div#body-contents > div > h1 {
+        font-size: 3em;
+    }
+    main section div.body-banner > div#body-contents > div  + div#btn-holder {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    main section div.body-banner > div#body-contents > div > p {
+        width: 100%;
+    }
+    section div.product-con{
+        padding: 0px 20px;
+    }
+    section div div p.product-article{
+        width: 100%;
+        text-align: left;
+    }
+    section div div.product-items div > div.btn-cart-view{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    section > div.product-details-page > div > p {
+        text-align: left;
+        width: 100% !important;
+    }
+    section > div.product-details-page > div.product-1, 
+    section div div.about-holder, section div.con-team div.team-row{ 
+        display: grid;
+        grid-template-columns: 90%;
+        width: 100%;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details{
+        text-align: center;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details > h1{
+        font-size: 2em;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details > div div ~ div{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        gap: 10px;
+    }
+    section div.product-container div.product-items{
+        display: grid;
+        grid-template-columns: 60%;
+     }
+    section div div.about-holder  > div + div {
+        text-align: center;
+    }
+    button.btn-learn-more{
+        width: 80%;
+    }
+    section div.con-team,
+    section div.contact-con,section div div.about-holder{
+        padding: 50px 5px;
+    }
+    section div.contact-con div.contact-us{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 20px 2px;
+    }
+    section div.contact-con > h2{
+        font-size: 1.8em !important;
+    }
+    div.newsletter > h2{
+        font-size: 1.5em;
+    }
+    .site-mail{
+        word-wrap: break-word;
+    }
+    .trusted-machant{display: none;}
+    header{
+        display: none;
+    }
+}
+
+
+/* ==== handburger ======= */
+.handburger, .handburgercancel{
+    display: none;
+}
+/* @media screen and (max-width: 500px) and (min-width:200px){
+   header{
+       position: absolute; 
+       left: 0%; 
+       width: calc(100% - 4em); 
+       max-height: 4em; 
+       padding: 0.6em 32px 0.9em 32px;
+    }
+    header > div {
+        width: 100%;
+    }
+    nav{width:230px;  text-align: left; margin-left:-230px; padding-top: 50px; float: left; position: fixed; background: #4527a0; left: 0; top: 0; height: 100vh;}
+    nav ul{display: block; overflow: hidden; border-top: 1px solid #311b92;}
+    nav li{display: block;}
+    nav li a{padding:1em 1em; color: #ede7f6; display: block;}
+    nav li a:hover{background: #311b92; color: #ede7f6;}
+    .handburger{display: inline-block;}
+    main{position: absolute; margin-left:0px; width: 100%; overflow-x: hidden; overflow-y: auto;   margin-top: 4.6em;}
+    footer{
+        display: none;
+    }
+    .showheader{left:230px; width:calc(100% - 294px);}
+    .shownav{margin-left:0;}
+    .showmain{margin-left:230px; width: calc(100% - 230px);}
+    .showbtn{display: none;}
+    .hidebtn{display: inline-block;}
+    }
+} */
