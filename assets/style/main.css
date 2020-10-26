@@ -6,8 +6,45 @@
     margin:0;
     font-family: 'Nunito', sans-serif,fantasy;
 }
+/* ======= header and navbar start here ========== */
+header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    background: #2F303A;
+}
+header > div{
+    padding-left: 100px !important;
+}
+header > div h1.page-logo{
+    font-size: 2.5em;
+}
+header > div h1.page-logo > a {
+    color: #fff;
+    text-transform: capitalize;
+}
+header > div div.page-logo > a.nav-link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+header > nav {
+    padding-left: 150px;
+}
+header nav > ul.nav-list{
+    list-style-type: none;
+}
+header nav > ul.nav-list > li{
+    float: left;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+header nav > ul > li > a.nav-link{
+    color: #fff;
+}
+/* ======= header and navbar end here  ========== */
 
-/* ======= style for home page start here ==========  */
 main section div.body-banner{
     height: 100vh;
     width: 100%;
@@ -17,25 +54,37 @@ main section div.body-banner{
     background-size: cover;
     background-attachment: fixed;
 }
-main section div.body-banner div > div#body-contents{
+main section div.body-banner > div#body-contents{
+    text-align: center;
+    padding: 100px 0px 10px 0px;
+    color: #fff;    
+    position: relative;
     animation: slide-in 2s;
 }
 @keyframes slide-in{
-    from{ bottom:-100px; opacity:0 } 
+    from{ bottom:-500px; opacity:0 }
     to{ bottom:0; opacity:1 }
 }
-main section div.body-banner div > div#body-contents h1{
+main section div.body-banner > div#body-contents > div > p {
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+main section div.body-banner > div#body-contents > div > h1{
     font-size: 5em;
     text-transform: capitalize;
     font-weight: 900 !important;
 }
 
-main section div.body-banner div > div#body-contents div#btn-holder{
+main section div.body-banner > div#body-contents > div  + div#btn-holder{
+    height: auto;
     display:  grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 20% 20%;
     gap: 15px;
+    justify-content: center;
+    padding: 20px;
 }
-main section div.body-banner div > div#body-contents div#btn-holder button#btn-shop-now{
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-shop-now{
     display: block;
     height: 3.7em;
     background: inherit;
@@ -44,12 +93,13 @@ main section div.body-banner div > div#body-contents div#btn-holder button#btn-s
     text-transform: uppercase;
     outline: none;
     font-weight: bolder;
+    transition-duration: 0.3s;
 }
-main section div.body-banner div > div#body-contents div#btn-holder button#btn-shop-now:hover{
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-shop-now:hover{
     background: #fff;
     color: #000;
 }
-main section div.body-banner div > div#body-contents div#btn-holder button#btn-membership{
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-membership{
     display: block;
     height: 3.7em;
     background: #fff;
@@ -59,16 +109,20 @@ main section div.body-banner div > div#body-contents div#btn-holder button#btn-m
     outline: none;
     font-weight: bolder;
 }
-main section div.body-banner div > div#body-contents div#btn-holder button#btn-membership:hover{
+main section div.body-banner > div#body-contents > div  + div#btn-holder button#btn-membership:hover{
     background: inherit;
     color: #fff;
 }
 /* ======= style for home page end here ==========  */
 
 /* ======= style about product page start here ==========  */
+section div.product-con{
+    padding: 0px 100px;
+}
 section div div p.product-article{
     margin: 0px auto;
     color: #8B8080;
+    width: 50%;
 }
 section div.product-container{
     height: auto;
@@ -128,7 +182,7 @@ button.btn-view-details:hover{
     color: #fff !important;
 }
 section > div.product-details-page{
-    background: #F8F9FA;;
+    background: #F8F9FA;
 }
 section > div.product-details-page > div.product-1{
     width: 80%;
@@ -172,6 +226,9 @@ section div div.about-holder div > figure img {
     height: auto;
     width: 100%;
 }
+.trusted-machant{
+    transform: translate(26em, -6em); background: #46DDB0; width: 50%;
+}
 section div div.about-holder > div + div  > h5, p.about-article{
     color: #8B8080;
 }
@@ -179,7 +236,7 @@ section div div.about-holder > div + div  > h5, p.about-article{
 
 /* ========== style for team page start here ============= */
 section div.con-team{
-    padding: 50px 100px;
+    padding: 0px 100px;
 }
 section div.con-team div.team-row{
     padding: 20px 50px;
@@ -218,193 +275,127 @@ section div.contact-con div.contact-us div div > div.socail-media-handle{
     justify-items: center;
 }
 /* ======= contact page end here ========== */
-
 /* ======= footer page start here ========== */
 footer{
     color: #fff;
 }
-
-
-
-
-
-header{
-    grid-column: 1/-1;
-    
-}
-
-header > div{
-    font-weight: bold;
-    padding-top: 0.8em;
-    padding-left: 4em;;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li{
-    padding-right: 4em;
-    list-style: none;
-
-}
-
-nav ul li a{
-    color:black;
-    padding:0.7em;
-    transition: 1s ease;
+/* ======= footer page end here ========== */
+i{
+    cursor: pointer;
 }
 
 
 
 
 
-nav ul li a:hover{
-    color:white;
-    background:black
-}
-
-
-
-.about{
-    grid-column: 1/-1;
-    display: grid;
-   
-}
-
-.about > div{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 450px;
-}
-
-.about h2{
-    grid-column: 1/-1;
-    text-align: center;
-
-}
-
-.about_pic{
-    grid-column: 2/8;
-    grid-row: 2/5;
-    background: url('../img/about_1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-.about article{
-    grid-column: 9/12;
-    
-}
-
-
-article{
-    display: flex;
-    align-items: center;
-}
-
-
-article a{
-    background:black;
-    color: white;
-    padding:0.6em;
-}
-
-
-article p{
-    line-height: 1.5em;
-    padding-bottom: 1em;
-    text-align: start;
-}
-
-footer{
-    /* text-align: center; */
-    margin: auto auto;
-}
-
-
-/* PRODUCTS PAGE */
-
-.container_2{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto 2fr
-}
-
-
-
-.main_2{
-    grid-column: 1/-1;
-    padding-top: 3em;
-    
-    
-}
-
-.main_2 > h1, p{
-    text-align: center;
-}
-
-.main_2 >p{
-    padding-left: 10em;
-    padding-right: 10em;
-}
-
-
-.content{
-    padding-top: 3em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap:30px;
-    grid-auto-rows: auto;
-}
-
-.content > div{
-    text-align: center;
-}
-
-.content img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-
-/* carts image */
-
-.container_3{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto 2fr
-}
-
-
-.container_3 > *{
-    grid-column: 1/-1;
-}
-
-.container_3 > section{
-    padding-top: 2em;
-}
-
-
-@media screen and (max-width:299px) and (min-width: 200px) {
-    section div.con-team div.team-row{
-        display: grid;
-        grid-template-columns: 80%;
+/* ==== media query for mobile view =========== */
+@media screen and (max-width: 800px) and (min-width:200px) {
+    main section div.body-banner > div#body-contents > div > h1 {
+        font-size: 3em;
     }
-    section div.con-team div.team-row div > figure > img{
-        height: auto;
+    main section div.body-banner > div#body-contents > div  + div#btn-holder {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    main section div.body-banner > div#body-contents > div > p {
         width: 100%;
     }
+    section div.product-con{
+        padding: 0px 20px;
+    }
+    section div div p.product-article{
+        width: 100%;
+        text-align: left;
+    }
+    section div div.product-items div > div.btn-cart-view{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    section > div.product-details-page > div > p {
+        text-align: left;
+        width: 100% !important;
+    }
+    section > div.product-details-page > div.product-1, 
+    section div div.about-holder, section div.con-team div.team-row{ 
+        display: grid;
+        grid-template-columns: 90%;
+        width: 100%;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details{
+        text-align: center;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details > h1{
+        font-size: 2em;
+    }
+    section > div.product-details-page > div.product-1 div.product1-details > div div ~ div{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        gap: 10px;
+    }
+    section div.product-container div.product-items{
+        display: grid;
+        grid-template-columns: 60%;
+     }
+    section div div.about-holder  > div + div {
+        text-align: center;
+    }
+    button.btn-learn-more{
+        width: 80%;
+    }
+    section div.con-team,
+    section div.contact-con,section div div.about-holder{
+        padding: 50px 5px;
+    }
+    section div.contact-con div.contact-us{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 20px 2px;
+    }
+    section div.contact-con > h2{
+        font-size: 1.8em !important;
+    }
+    div.newsletter > h2{
+        font-size: 1.5em;
+    }
+    .site-mail{
+        word-wrap: break-word;
+    }
+    .trusted-machant{display: none;}
+    header{
+        display: none;
+    }
 }
 
 
+/* ==== handburger ======= */
+.handburger, .handburgercancel{
+    display: none;
+}
+/* @media screen and (max-width: 500px) and (min-width:200px){
+   header{
+       position: absolute; 
+       left: 0%; 
+       width: calc(100% - 4em); 
+       max-height: 4em; 
+       padding: 0.6em 32px 0.9em 32px;
+    }
+    header > div {
+        width: 100%;
+    }
+    nav{width:230px;  text-align: left; margin-left:-230px; padding-top: 50px; float: left; position: fixed; background: #4527a0; left: 0; top: 0; height: 100vh;}
+    nav ul{display: block; overflow: hidden; border-top: 1px solid #311b92;}
+    nav li{display: block;}
+    nav li a{padding:1em 1em; color: #ede7f6; display: block;}
+    nav li a:hover{background: #311b92; color: #ede7f6;}
+    .handburger{display: inline-block;}
+    main{position: absolute; margin-left:0px; width: 100%; overflow-x: hidden; overflow-y: auto;   margin-top: 4.6em;}
+    footer{
+        display: none;
+    }
+    .showheader{left:230px; width:calc(100% - 294px);}
+    .shownav{margin-left:0;}
+    .showmain{margin-left:230px; width: calc(100% - 230px);}
+    .showbtn{display: none;}
+    .hidebtn{display: inline-block;}
+    }
+} */
