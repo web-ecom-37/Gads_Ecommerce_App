@@ -1,0 +1,7155 @@
+@charset "UTF-8";@-webkit-keyframes hideMobileBanner {
+    from {
+        height: 70px
+    }
+
+    to {
+        height: 0
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0;
+    font-family: 'Nunito', sans-serif,fantasy;
+}
+
+@keyframes hideMobileBanner {
+    from {
+        height: 70px
+    }
+
+    to {
+        height: 0
+    }
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStdBookOblique;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+html {
+    height: 100%
+}
+
+/* ======= start's here FOR MOBILE ==========  
+body.mobile {
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    line-height: inherit;
+    min-height: 100%;
+    background-color: #f1f1f1
+}
+
+body.mobile #content {
+    min-width: 280px;
+    height: 100%
+}
+
+body.mobile #content.is-mobile-web {
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 28px
+}
+
+body.mobile #content:not(.is-mobile-web) {
+    padding-bottom: 80px;
+    margin-bottom: 0
+}
+
+body.mobile #content .mobile-spacer {
+    padding-left: 6%;
+    padding-right: 6%;
+    background: #fff
+}
+
+body.mobile #content .privacy-info {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+body.mobile form {
+    padding-top: 0
+}
+
+body.mobile #header {
+    padding: 10px 0 10px 20px;
+    margin: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    min-width: 320px;
+    max-width: 100%
+}
+
+body.mobile #header .mobile-back {
+    display: block;
+    text-decoration: none;
+    float: left;
+    padding-right: 5px;
+    margin-right: 5px
+}
+
+body.mobile #header .mobile-back span {
+    display: block;
+    height: 1px;
+    font-size: 0;
+    text-indent: -999px
+}
+
+body.mobile #header .mobile-back::after {
+    content: "‹";
+    font-size: 55px;
+    line-height: 15px;
+    color: #000;
+    font-weight: 700
+}
+
+body.mobile #header #web-app-logo {
+    width: 95px;
+    height: 28px;
+    float: left
+}
+
+body.mobile #content #main .container {
+    border: 0
+}
+
+body.mobile #content #main .container.register hr.hr-with-text {
+    float: none
+}
+
+body.mobile #content #main .container.register-social .info {
+    margin-bottom: 42px
+}
+
+body.mobile #content #main .container.register-social .social-register {
+    margin-top: 0
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile {
+    padding-bottom: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.checkbox-container,body.mobile #content #main .container.register-social .social-register.native-mobile div.field,body.mobile #content #main .container.register-social .social-register.native-mobile div.submit {
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.checkbox-container div.field,body.mobile #content #main .container.register-social .social-register.native-mobile div.field div.field,body.mobile #content #main .container.register-social .social-register.native-mobile div.submit div.field {
+    width: 100%
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.checkbox-container.optional-field,body.mobile #content #main .container.register-social .social-register.native-mobile div.field.optional-field,body.mobile #content #main .container.register-social .social-register.native-mobile div.submit.optional-field {
+    background: #f8f8f8;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 5% 31px;
+    margin-bottom: 0
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.checkbox-container.optional-field+.optional-field,body.mobile #content #main .container.register-social .social-register.native-mobile div.field.optional-field+.optional-field,body.mobile #content #main .container.register-social .social-register.native-mobile div.submit.optional-field+.optional-field {
+    padding-top: 0
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.checkbox-container.optional-field+.checkbox-container,body.mobile #content #main .container.register-social .social-register.native-mobile div.field.optional-field+.checkbox-container,body.mobile #content #main .container.register-social .social-register.native-mobile div.submit.optional-field+.checkbox-container {
+    margin-top: 31px
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile .form-field-spacer {
+    background-color: #fff;
+    margin-top: 20px
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile span.optional {
+    display: inline;
+    text-transform: capitalize;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px
+}
+
+body.mobile #content #main .container.password-sent .subtitle {
+    margin-top: 20px;
+    padding-top: 0
+}
+
+body.mobile #content #main .container.password-sent div.info-link {
+    margin-bottom: 50px
+}
+
+body.mobile #content #main .container.existing-account .info p {
+    padding-top: 0
+}
+
+body.mobile #content #main .container.existing-account .signin h2 a~a {
+    clear: both;
+    display: block
+}
+
+body.mobile #content #main .container.existing-account .existing-signin {
+    padding: 0 5%
+}
+
+body.mobile #content #main .container #action-links {
+    display: none
+}
+
+body.mobile #content #main .container .options {
+    padding: 0 5% 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto
+}
+
+body.mobile #content #main .container .options p {
+    cursor: auto
+}
+
+body.mobile #content #main .container .options.disabled {
+    cursor: auto;
+    opacity: .5
+}
+
+body.mobile #content #main .container .options.disabled .options-error-block {
+    display: block;
+    position: static;
+    width: 100%
+}
+
+body.mobile #content #main .container .options.disabled .options-error-block .options-error {
+    width: 90%;
+    max-width: 90%;
+    padding: 20px 5%;
+    float: left
+}
+
+body.mobile #content #main .container .options.disabled .options-error-block .options-error p {
+    font-size: 18px;
+    margin: 0
+}
+
+body.mobile #content #main .container .options.disabled .options-error-block .options-error h5 {
+    font-size: 18px
+}
+
+body.mobile #content #main .container .options.disabled .options-error-block .options-error::after,body.mobile #content #main .container .options.disabled .options-error-block .options-error::before {
+    display: none
+}
+
+body.mobile #content #main .container .options .connect {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+body.mobile #content #main .container .options .connect .text span {
+    font-family: inherit;
+    text-transform: uppercase
+}
+
+body.mobile #content #main .container .options .connect.email {
+    margin-top: 0;
+    margin-left: 0;
+    min-height: 40px;
+    border-radius: 0
+}
+
+body.mobile #content #main .container .options .connect.email .icon {
+    background-position: center
+}
+
+body.mobile #content #main .container .options .connect.email .text {
+    padding: 0;
+    display: block;
+    left: 15px
+}
+
+body.mobile #content #main .container .options.one-button {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 10px
+}
+
+body.mobile #content #main .container .options.one-button a {
+    width: 100%
+}
+
+body.mobile #content #main .container .options.one-button .connect {
+    margin-top: 0
+}
+
+body.mobile #content #main .container .options.four-buttons,body.mobile #content #main .container .options.four-buttons-mobile {
+    height: auto;
+    padding: 0;
+    padding-bottom: 20px
+}
+
+body.mobile #content #main .container .options.four-buttons .social-links-container,body.mobile #content #main .container .options.four-buttons-mobile .social-links-container {
+    width: 100%;
+    min-width: 263px;
+    height: auto
+}
+
+body.mobile #content #main .container .options.four-buttons .social-links-container .social-link,body.mobile #content #main .container .options.four-buttons-mobile .social-links-container .social-link {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px
+}
+
+body.mobile #content #main .container .options.four-buttons li.social-register,body.mobile #content #main .container .options.four-buttons-mobile li.social-register {
+    width: 100%;
+    margin: 2.5px 0
+}
+
+body.mobile #content #main .container .options.four-buttons .connect,body.mobile #content #main .container .options.four-buttons-mobile .connect {
+    float: left;
+    width: 100%;
+    text-transform: uppercase
+}
+
+body.mobile #content #main .container .options.four-buttons .connect.apple,body.mobile #content #main .container .options.four-buttons .connect.facebook,body.mobile #content #main .container .options.four-buttons .connect.google,body.mobile #content #main .container .options.four-buttons .connect.twitter,body.mobile #content #main .container .options.four-buttons-mobile .connect.apple,body.mobile #content #main .container .options.four-buttons-mobile .connect.facebook,body.mobile #content #main .container .options.four-buttons-mobile .connect.google,body.mobile #content #main .container .options.four-buttons-mobile .connect.twitter {
+    margin: 0
+}
+
+body.mobile #content #main .container .options h4 {
+    clear: both;
+    margin-top: 10px
+}
+
+body.mobile #content #main .container hr.hr-with-text {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left
+}
+
+body.mobile #content #main .container div.four-buttons+hr.hr-with-text {
+    margin-top: 15px
+}
+
+body.mobile #content #main .container .hr-with-text {
+    font-size: 1.2em;
+    letter-spacing: .08px
+}
+
+body.mobile #content #main .container .form-login fieldset div:first-child+.field {
+    margin-top: 0
+}
+
+body.mobile #content #main .container div.form {
+    width: 90%;
+    padding: 0
+}
+
+body.mobile #content #main .container div.form.form-forgotten-password {
+    margin-top: 10px
+}
+
+body.mobile #content #main .container div.form.form-forgotten-password div:first-child+.field {
+    margin-top: 0
+}
+
+body.mobile #content #main .container div.form.form-forgotten-password fieldset {
+    padding-bottom: 50px
+}
+
+body.mobile #content #main .container div.form.form-register fieldset {
+    margin-top: 33px;
+    padding-bottom: 0
+}
+
+body.mobile #content #main .container div.form.form-register fieldset div.field .last-subfield.select-list select {
+    padding-left: 5px;
+    font-size: 16px;
+    letter-spacing: -1px
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container,body.mobile #content #main .container div.form.form-register.native-mobile div.field,body.mobile #content #main .container div.form.form-register.native-mobile div.submit {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container div.field,body.mobile #content #main .container div.form.form-register.native-mobile div.field div.field,body.mobile #content #main .container div.form.form-register.native-mobile div.submit div.field {
+    width: 100%
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container input,body.mobile #content #main .container div.form.form-register.native-mobile div.field input,body.mobile #content #main .container div.form.form-register.native-mobile div.submit input {
+    margin-top: 10px
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field {
+    background: #f8f8f8;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 5% 31px;
+    margin-bottom: 0
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field .select-list,body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field .subfield,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field .select-list,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field .subfield,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field .select-list,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field .subfield {
+    border-color: #767676
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field .tickbox-container.selected,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field .tickbox-container.selected,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field .tickbox-container.selected {
+    border-color: #2d2d2d
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field+.optional-field,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field+.optional-field,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field+.optional-field {
+    padding-top: 0
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.optional-field+.checkbox-container,body.mobile #content #main .container div.form.form-register.native-mobile div.field.optional-field+.checkbox-container,body.mobile #content #main .container div.form.form-register.native-mobile div.submit.optional-field+.checkbox-container {
+    margin-top: 31px
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile span.optional {
+    display: inline;
+    text-transform: capitalize;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px
+}
+
+body.mobile #content #main .container div.form.form-register div.select-list.subfield {
+    background-position: 100% center;
+    width: 23%;
+    margin-right: 2%
+}
+
+body.mobile #content #main .container div.form.form-register div.select-list.subfield select {
+    padding: 8px 25px 8px 5px
+}
+
+body.mobile #content #main .container div.form.form-register div.select-list.subfield.long-subfield {
+    width: 50%
+}
+
+body.mobile #content #main .container div.form.form-register div.select-list.subfield.last-subfield {
+    margin-right: 0
+}
+
+body.mobile #content #main .container div.form hr.account-header,body.mobile #content #main .container div.form hr.form-header {
+    display: none
+}
+
+body.mobile #content #main .container div.form .form-title {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.field {
+    width: 100%;
+    padding: 0
+}
+
+body.mobile #content #main .container div.form div.field.checkbox-container {
+    margin-bottom: 34px
+}
+
+body.mobile #content #main .container div.form div.field span.hide,body.mobile #content #main .container div.form div.field span.reveal {
+    font-size: 12px;
+    color: #2d2d2d;
+    font-weight: 700;
+    text-decoration: none;
+    top: 14px;
+    right: 5px;
+    text-transform: uppercase;
+    margin-top: -33px
+}
+
+body.mobile #content #main .container div.form div.field span.hint {
+    font-size: 14px
+}
+
+body.mobile #content #main .container div.form div.field input,body.mobile #content #main .container div.form div.field select {
+    font-size: 1.4625em;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #767676;
+    font-size: 1.4625em;
+    color: #2d2d2d
+}
+
+body.mobile #content #main .container div.form div.field input::-webkit-input-placeholder,body.mobile #content #main .container div.form div.field select::-webkit-input-placeholder {
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input:-moz-placeholder,body.mobile #content #main .container div.form div.field select:-moz-placeholder {
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input::-moz-placeholder,body.mobile #content #main .container div.form div.field select::-moz-placeholder {
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input:-ms-input-placeholder,body.mobile #content #main .container div.form div.field select:-ms-input-placeholder {
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input::placeholder,body.mobile #content #main .container div.form div.field select::placeholder {
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input:focus,body.mobile #content #main .container div.form div.field select:focus {
+    border-color: #2d2d2d
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error,body.mobile #content #main .container div.form div.field select.input-validation-error {
+    border: 2px solid #ce1948
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error::-webkit-input-placeholder,body.mobile #content #main .container div.form div.field select.input-validation-error::-webkit-input-placeholder {
+    color: #ce1948;
+    font-weight: 400
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error:-moz-placeholder,body.mobile #content #main .container div.form div.field select.input-validation-error:-moz-placeholder {
+    color: #ce1948
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error::-moz-placeholder,body.mobile #content #main .container div.form div.field select.input-validation-error::-moz-placeholder {
+    color: #ce1948
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error:-ms-input-placeholder,body.mobile #content #main .container div.form div.field select.input-validation-error:-ms-input-placeholder {
+    color: #ce1948
+}
+
+body.mobile #content #main .container div.form div.field input.input-validation-error::placeholder,body.mobile #content #main .container div.form div.field select.input-validation-error::placeholder {
+    color: #ce1948
+}
+
+body.mobile #content #main .container div.form div.field input.valid~span.tick,body.mobile #content #main .container div.form div.field select.valid~span.tick {
+    right: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+body.mobile #content #main .container div.form div.field input.valid~span.field-message,body.mobile #content #main .container div.form div.field select.valid~span.field-message {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.field span.field-message {
+    display: none!important
+}
+
+body.mobile #content #main .container div.form div.field .subfield input,body.mobile #content #main .container div.form div.field .subfield select {
+    padding-right: 0
+}
+
+body.mobile #content #main .container div.form div.field .subfield input.valid~span.tick,body.mobile #content #main .container div.form div.field .subfield select.valid~span.tick {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.field .mobile-switch {
+    display: inline
+}
+
+body.mobile #content #main .container div.form div.field input {
+    padding-right: 30px
+}
+
+body.mobile #content #main .container div.form div.field input[type=password] {
+    letter-spacing: 0
+}
+
+body.mobile #content #main .container div.form div.field input[type=password]::-webkit-input-placeholder {
+    letter-spacing: 0
+}
+
+body.mobile #content #main .container div.form div.field input[type=password]:-moz-placeholder {
+    letter-spacing: 0
+}
+
+body.mobile #content #main .container div.form div.field input[type=password]::-moz-placeholder {
+    letter-spacing: 0
+}
+
+body.mobile #content #main .container div.form div.field input[type=password]:-ms-input-placeholder {
+    letter-spacing: 0
+}
+
+body.mobile #content #main .container div.form div.field input[type=checkbox] {
+    display: inline;
+    padding-right: 0;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    margin-top: 0;
+    width: 15px;
+    height: 15px
+}
+
+body.mobile #content #main .container div.form div.field label {
+    font-size: 16px
+}
+
+body.mobile #content #main .container div.form div.field label.input-validation-error~span.hint {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.field label.checkbox {
+    font-size: 14px;
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color: #767676;
+    margin: 0 0 0 1%;
+    line-height: 15px;
+    background-image: none;
+    padding-left: 10px;
+    clear: none;
+    width: 90%
+}
+
+body.mobile #content #main .container div.form div.field label.radio {
+    margin-left: 0;
+    margin-right: 0
+}
+
+body.mobile #content #main .container div.form div.field span.field-validation-error {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: .4px;
+    display: block;
+    background-color: #fae7ec;
+    border: 0;
+    padding: 9px 15px;
+    position: static;
+    box-shadow: none;
+    max-width: none;
+    width: 100%;
+    float: left;
+    clear: both
+}
+
+body.mobile #content #main .container div.form div.field span.field-validation-error span {
+    padding: 0
+}
+
+body.mobile #content #main .container div.form div.field span.field-validation-error::after,body.mobile #content #main .container div.form div.field span.field-validation-error:after {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.field span.field-validation-error::before,body.mobile #content #main .container div.form div.field span.field-validation-error:before {
+    display: none
+}
+
+body.mobile #content #main .container div.form form {
+    padding-top: 0;
+    border-top: none
+}
+
+body.mobile #content #main .container div.form form fieldset {
+    padding-bottom: 0
+}
+
+body.mobile #content #main .container div.form form fieldset div.submit input {
+    min-width: 100%;
+    height: 40px;
+    background: #2d2d2d;
+    font-size: 17px;
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+body.mobile #content #main .container div.form form fieldset div.submit input[disabled] {
+    background: #aaa
+}
+
+body.mobile #content #main .container div.form form::after {
+    display: none
+}
+
+body.mobile #content #main .container div.form div.forgotten-password {
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    margin-top: 20px
+}
+
+body.mobile #content #main .container div.form div.forgotten-password a {
+    padding: 5px 10px
+}
+
+body.mobile #content #main .container .signin-link-spacer {
+    width: 90%;
+    margin: 50px 5% 0 5%
+}
+
+body.mobile #content #main .container .signin {
+    font-size: 1.4em
+}
+
+body.mobile #content #main .container div.info {
+    padding: 0;
+    margin-bottom: 43px
+}
+
+body.mobile #content #main .container div.info .title {
+    padding: 0;
+    max-width: 100%
+}
+
+body.mobile #content #main .container div.info .info-link {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 0
+}
+
+body.mobile #content #main .container div.info .info-link a {
+    letter-spacing: .5px
+}
+
+body.mobile #content #main .terms {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-align: left
+}
+
+body.mobile #content #main .terms.onMobile {
+    padding: 20px 20px 5px 20px
+}
+
+body.mobile #content #main .button-link {
+    padding: 20px 0 30px 0
+}
+
+body.mobile #content #main .button-link a {
+    background: #2d2d2d;
+    min-width: 90%;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    font-size: 17px;
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif
+}
+
+body.mobile #content #main .button-link a.disabled {
+    background: #aaa
+}
+
+body.mobile h1 {
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 2em;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: 1px;
+    word-wrap: break-word
+}
+
+body.mobile h2 {
+    font-size: 17px;
+    line-height: 21px
+}
+
+body.mobile h3 {
+    font-size: 19.5px
+}
+
+body.mobile #content #main .signin-container div.info-centre h1,body.mobile #content #main .signin-container div.info-centre p {
+    padding: 0
+}
+
+body.mobile #content #main .signin-container div.info-centre h1.last-child,body.mobile #content #main .signin-container div.info-centre p.last-child {
+    float: left;
+    width: 100%;
+    margin: 29px 0 0
+}
+
+body.mobile #content #main .signin-container div.info-centre.disabled h1.last-child,body.mobile #content #main .signin-container div.info-centre.disabled p.last-child {
+    margin: 33px 0
+}
+
+body.mobile #content #main .signin-container div.info-centre .options {
+    margin-top: 10px
+}
+
+body.mobile p.mobile-subtitle,body.mobile p.subtitle {
+    padding-top: 10px;
+    letter-spacing: .5px;
+    max-width: 100%
+}
+
+body.mobile h5 {
+    font-size: 1.3em;
+    letter-spacing: .08px
+}
+
+body.mobile h6 {
+    font-size: 1.09746em
+}
+
+body.mobile p {
+    font-size: 17px;
+    letter-spacing: .5px;
+    line-height: 25px
+}
+
+body.mobile .strong-text {
+    font-size: 18px
+}
+
+body.mobile #page-banner {
+    min-width: 280px;
+    margin: 0 auto 0 auto;
+    padding: 10px 33px 10px 10px;
+    font-size: 15px
+}
+
+body.mobile #page-banner .banner-copy {
+    background-position: left 5px
+}
+
+body.mobile #page-banner a.close-banner {
+    background-position: left 5px;
+    min-height: 20px
+}
+
+body.mobile div.info-centre .subtitle-container .subtitle {
+    max-width: 95%;
+    padding: 10px
+}
+
+body.mobile div.info-centre .subtitle-container[data-state=isExpanded] {
+    max-height: 200px;
+    height: auto
+}
+
+body.mobile.account-page {
+    background-color: #f1f1f1
+}
+
+body.mobile.account-page div#header {
+    margin: 0;
+    width: 100%;
+    zoom:1}
+
+body.mobile.account-page.my-details-page #page-banner {
+    display: none
+}
+
+body.mobile.account-page div#content {
+    min-width: 280px;
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    border: none
+}
+
+body.mobile.account-page div#content h1.title {
+    top: 0;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff
+}
+
+body.mobile.account-page div#content #unSteps {
+    margin-top: -13px
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons {
+    height: 50px;
+    border-right: 1px solid #000
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step {
+    width: 20%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected {
+    color: #fff;
+    background: url( "check bar selector here") bottom center no-repeat
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage {
+    border-left: 1px solid #000;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    background-size: 25px
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage.step1 {
+    background-image: url(      )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage.step2 {
+    background-image: url(      )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage.step3 {
+    background-image: url(      )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage.step4 {
+    background-image: url(      )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step .unStepImage.step5 {
+    background-image: url(      )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected .unStepImage.step1 {
+    background-image: url(    )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected .unStepImage.step2 {
+    background-image: url(    )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected .unStepImage.step3 {
+    background-image: url(    )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected .unStepImage.step4 {
+    background-image: url(    )
+}
+
+body.mobile.account-page div#content #unSteps .unBarIcons .step.selected .unStepImage.step5 {
+    background-image: url(    )
+}
+
+body.mobile.account-page div#content #unSteps .unBarText {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    font-size: 1.35954em;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+body.mobile.account-page div#content div.form {
+    width: auto
+}
+
+body.mobile.account-page div#content div.form hr.account-header,body.mobile.account-page div#content div.form hr.form-header {
+    display: none
+}
+
+body.mobile.account-page div#content div.form div.validation-summary-errors {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+body.mobile.account-page div#content div.form div.validation-summary-errors>span {
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif
+}
+
+body.mobile.account-page div#content div.form div.validation-summary-success {
+    font-size: 1.17em;
+    font-weight: 700;
+    background-color: #00aa5b;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin-top: -14px;
+    -webkit-animation: hideMobileBanner .8s none;
+    -webkit-animation-delay: 4s;
+    animation: hideMobileBanner .8s none;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+body.mobile.account-page div#content div.form div.validation-summary-success>span {
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative
+}
+
+body.mobile.account-page div#content div.form div.validation-summary-success>span::after {
+    background-image: url(../imgs/shape-checkmark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: " ";
+    height: 13px;
+    width: 15px;
+    right: -25px;
+    top: 0;
+    position: absolute
+}
+
+body.mobile.account-page div#content div.form .button-link {
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+body.mobile.account-page div#content div.form .button-link a {
+    background-color: #2d2d2d;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #3b3b3b;
+    background: -moz-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#676767),color-stop(100%,#3b3b3b));
+    background: -webkit-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -o-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -ms-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: linear-gradient(to bottom,#676767 0,#3b3b3b 100%);
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 22.5px;
+    font-family: Tahoma,Geneva,sans-serif
+}
+
+body.mobile.account-page div#content div.form .button-link a[disabled] {
+    background: #9e9e9e;
+    background: -moz-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#b1b1b1),color-stop(100%,#9e9e9e));
+    background: -webkit-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -o-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -ms-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: linear-gradient(to bottom,#b1b1b1 0,#9e9e9e 100%)
+}
+
+body.mobile.account-page div#content div.form div.address-container {
+    border-top: 1px solid #eee;
+    border-bottom: none
+}
+
+body.mobile.account-page div#content div.form div.address-container .address,body.mobile.account-page div#content div.form div.address-container .address-options,body.mobile.account-page div#content div.form div.address-container .contact-numbers {
+    float: none;
+    width: 100%;
+    margin-top: 10px
+}
+
+body.mobile.account-page div#content div.form div.address-container .address p,body.mobile.account-page div#content div.form div.address-container .address ul,body.mobile.account-page div#content div.form div.address-container .address-options p,body.mobile.account-page div#content div.form div.address-container .address-options ul,body.mobile.account-page div#content div.form div.address-container .contact-numbers p,body.mobile.account-page div#content div.form div.address-container .contact-numbers ul {
+    font-size: 1.4625em
+}
+
+body.mobile.account-page div#content div.form div.address-container .address .address-checkbox input[type=checkbox],body.mobile.account-page div#content div.form div.address-container .address-options .address-checkbox input[type=checkbox],body.mobile.account-page div#content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox] {
+    margin-bottom: 10px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left
+}
+
+body.mobile.account-page div#content div.form div.address-container .address .address-checkbox input[type=checkbox]~label,body.mobile.account-page div#content div.form div.address-container .address-options .address-checkbox input[type=checkbox]~label,body.mobile.account-page div#content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox]~label {
+    background-image: none;
+    padding-left: 10px
+}
+
+body.mobile.account-page div#content div.form div.address-container .address .address-checkbox input[type=checkbox]:checked,body.mobile.account-page div#content div.form div.address-container .address-options .address-checkbox input[type=checkbox]:checked,body.mobile.account-page div#content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox]:checked {
+    background-image: none
+}
+
+body.mobile.account-page div#content div.form div.address-container .address .address-checkbox label,body.mobile.account-page div#content div.form div.address-container .address-options .address-checkbox label,body.mobile.account-page div#content div.form div.address-container .contact-numbers .address-checkbox label {
+    font-size: 15px
+}
+
+body.mobile.account-page div#content div.form div.address-container .contact-numbers li {
+    border-top: 2px solid #eee;
+    padding: 5px 0
+}
+
+body.mobile.account-page div#content div.form div.address-container .contact-numbers li span {
+    display: block;
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    margin-top: 5px;
+    color: #aaa
+}
+
+body.mobile.account-page div#content div.form div.address-container div.submit {
+    margin-top: 0
+}
+
+body.mobile.account-page div#content div.form div.address-container div.submit div.buttons {
+    width: 50%;
+    float: none
+}
+
+body.mobile.account-page div#content div.form div.address-container div.submit div.buttons input[type=button],body.mobile.account-page div#content div.form div.address-container div.submit div.buttons input[type=submit] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 22.5px;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    background-color: #ddd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box
+}
+
+body.mobile.account-page div#content div.form .checkbox-switch-error {
+    display: none;
+    width: 100%
+}
+
+body.mobile.account-page div#content div.form .checkbox-switch-error .switch-error-content {
+    background: #fdf0ce;
+    color: #222;
+    padding: 17px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: left;
+    border: #ede1c0 solid 1px;
+    position: relative
+}
+
+body.mobile.account-page div#content div.form .checkbox-switch-error .switch-error-content p {
+    font-size: 18px;
+    color: #222;
+    margin: 0;
+    padding: 0
+}
+
+body.mobile.account-page div#content div.form .checkbox-switch-error .switch-error-content p a {
+    text-decoration: underline;
+    color: #222
+}
+
+body.mobile.account-page div#content div.form .checkbox-switch-error .switch-error-content a.close-error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    text-align: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url( "close icon here") no-repeat;
+    background-size: 10px;
+    background-size: 10px;
+    padding: 12px;
+    background-position: center
+}
+
+body.mobile.account-page div#content div.form form .form-subtitle {
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 1.4625em;
+    text-align: left
+}
+
+body.mobile.account-page div#content div.form form fieldset .form-title {
+    display: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) {
+    background: #fff;
+    margin: 0;
+    padding: 5px 20px 24px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container):first-of-type {
+    padding-top: 10px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .input-wrapper,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .select-list,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) label,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-right: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .select-list {
+    height: auto;
+    background-position: 100% center
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .select-list+.select-list select {
+    padding-left: 15px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .long-subfield.select-list {
+    width: 50%
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .last-subfield.select-list select {
+    padding-left: 5px;
+    letter-spacing: -1px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select {
+    font-size: 1.4625em;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #767676;
+    font-size: 1.4625em;
+    color: #2d2d2d
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input::-webkit-input-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select::-webkit-input-placeholder {
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input:-moz-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select:-moz-placeholder {
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input::-moz-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select::-moz-placeholder {
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input:-ms-input-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select:-ms-input-placeholder {
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input::placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select::placeholder {
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input:focus,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select:focus {
+    border-color: #2d2d2d
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error {
+    border: 2px solid #ce1948
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error::-webkit-input-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error::-webkit-input-placeholder {
+    color: #ce1948;
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error:-moz-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error:-moz-placeholder {
+    color: #ce1948
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error::-moz-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error::-moz-placeholder {
+    color: #ce1948
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error:-ms-input-placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error:-ms-input-placeholder {
+    color: #ce1948
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.input-validation-error::placeholder,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.input-validation-error::placeholder {
+    color: #ce1948
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.valid~span.tick,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.valid~span.tick {
+    right: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input.valid~span.field-message,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) select.valid~span.field-message {
+    display: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input[type=checkbox].checkbox {
+    display: inline;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    width: 15px;
+    height: 15px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) input[type=checkbox].checkbox:checked~label {
+    background-image: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) #lookup-address {
+    min-width: 50%
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) label {
+    margin-bottom: 5px;
+    font-size: 14px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) label.checkbox {
+    text-transform: uppercase;
+    background-image: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).required label[for]:after {
+    content: "*";
+    font-size: 18px;
+    font-family: FuturaPTBook-Reg,"Futura PT",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    padding-left: 5px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .hint {
+    display: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).checkbox-group .hint {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .subfield {
+    display: block;
+    float: left;
+    width: 23%;
+    margin-right: 2%
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .subfield.long-subfield {
+    width: 50%
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .subfield.last-subfield {
+    margin-right: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .subfield.last-subfield select {
+    padding-left: 5px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .single-checkbox {
+    width: auto;
+    margin-right: 10px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .single-checkbox input,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .single-checkbox label,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .single-checkbox select {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container) .single-checkbox label.checkbox {
+    display: inline;
+    padding: 0 0 0 10px;
+    max-width: 125px;
+    background-image: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).checkbox-group .hint {
+    margin-left: 0;
+    max-width: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).narrow-field input,body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).narrow-field select {
+    height: auto
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).narrow-field input {
+    padding: 8px 5px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).narrow-field select {
+    padding: 8px 5px 8px 5px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).mobile-switch-container {
+    position: relative;
+    padding-top: 10px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).mobile-switch-container label {
+    position: relative;
+    left: 10%;
+    top: 3px;
+    width: 90%;
+    margin: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).mobile-switch-container .mobile-switch {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 15px;
+    height: 15px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).mobile-switch-container .mobile-switch input {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).mobile-switch-container .mobile-switch input[type=checkbox] {
+    display: inline-block;
+    width: 100%;
+    height: 100%
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).full-width {
+    margin-left: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).full-width input.checkbox:checked~label {
+    background-image: none
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).full-width label {
+    display: inline;
+    width: auto;
+    font-weight: 400
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).full-width label.checkbox {
+    padding-left: 10px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field:not(.switch-container).additional-info {
+    font-size: 18px;
+    margin-left: 0;
+    width: 100%!important
+}
+
+body.mobile.account-page div#content div.form form fieldset div.postcode-lookup {
+    overflow: hidden
+}
+
+body.mobile.account-page div#content div.form form fieldset div.postcode-lookup #lookup-address {
+    margin-bottom: 20px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.postcode-lookup #address-list {
+    width: 100%;
+    padding: 8px 25px 8px 5px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.postcode-lookup input[type=button] {
+    background-color: #aaa
+}
+
+body.mobile.account-page div#content div.form form fieldset div.expand-address {
+    margin-left: 0;
+    font-size: 1.3455em
+}
+
+body.mobile.account-page div#content div.form form fieldset div.submit {
+    text-align: left;
+    clear: both;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.submit input {
+    min-width: 100%;
+    height: 50px;
+    background-color: #2d2d2d;
+    font-size: 17px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+body.mobile.account-page div#content div.form form fieldset div.submit input[disabled] {
+    background-color: #aaa
+}
+
+body.mobile.account-page div#content div.form form fieldset div.submit p {
+    display: block;
+    font-size: 18px;
+    margin-right: 0
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field-spacer {
+    border-top: 16px solid #f1f1f1;
+    height: 1px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field-spacer+div.field {
+    padding-top: 12px
+}
+
+body.mobile.account-page div#content div.form form fieldset div.field-spacer+div.field.change-password,body.mobile.account-page div#content div.form form fieldset div.field.change-password {
+    margin-bottom: 0;
+    padding: 20px 20px 10px
+}
+
+body.mobile.account-page div#content div.form.form-account-details form {
+    padding-top: 0
+}
+
+body.mobile.account-page div#content div.form.form-account-details .button-link a {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Tahoma,Geneva,sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    padding: 0;
+    line-height: 36px
+}
+
+body.mobile.account-page div#content div.form.form-account-details .button-link a:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+body.mobile.account-page div#content div.form.form-account-details .button-link a[disabled] {
+    background-color: #aaa
+}
+
+body.mobile.account-page div#content div.form.form-account-details .button-link a:hover {
+    opacity: 1;
+    -moz-opacity: 1
+}
+
+body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=button],body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=submit] {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Tahoma,Geneva,sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+    font-family: futura-pt,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    padding: 0;
+    line-height: 36px;
+    -webkit-font-smoothing: antialiased;
+    min-width: 0
+}
+
+body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=button]:hover,body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=submit]:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=button][disabled],body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=submit][disabled] {
+    background-color: #aaa
+}
+
+body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=button]:hover,body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=submit]:hover {
+    opacity: 1;
+    -moz-opacity: 1
+}
+
+body.mobile.account-page div#content div.form.form-account-details div.address-container div.submit form div.buttons input[type=button] {
+    background: #dbdbdb;
+    color: #222
+}
+
+body.mobile.account-page div#content div.form .qa-change-password-btn {
+    margin-top: -15px;
+    font-weight: 700
+}
+
+body.mobile.account-page div#content div.form .qa-change-notifications-btn {
+    font-weight: 700;
+    margin-top: 5px
+}
+
+body.mobile.account-page div#content div.form .preferences-placeholder {
+    font-size: 13px
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password form {
+    padding-top: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password form fieldset {
+    padding-bottom: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password form fieldset .field {
+    margin: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password form fieldset div.submit {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error {
+    font-size: 1.1em;
+    letter-spacing: .6px;
+    display: block;
+    background-color: transparent;
+    padding: 5px 0 0;
+    position: static;
+    box-shadow: none;
+    color: #ce1948;
+    max-width: none;
+    width: 100%;
+    clear: both;
+    border: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error span {
+    padding: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error::after,body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error:after {
+    display: none
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error::before,body.mobile.change-password-page div#content div.form#form-change-password span.field-validation-error:before {
+    display: none
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password input.qa-current-password-textbox,body.mobile.change-password-page div#content div.form#form-change-password input.qa-new-password-textbox {
+    padding-right: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password span.hide,body.mobile.change-password-page div#content div.form#form-change-password span.reveal {
+    font-size: 12px;
+    color: #2d2d2d;
+    font-weight: 700;
+    text-decoration: none;
+    top: 14px;
+    right: 5px;
+    text-transform: uppercase;
+    margin-right: 0
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password label.input-validation-error~span.hint {
+    display: none
+}
+
+body.mobile.change-password-page div#content div.form#form-change-password hr.account-header,body.mobile.change-password-page div#content div.form#form-change-password hr.form-header {
+    display: none
+}
+
+body.mobile.address-book-page {
+    background: #fff
+}
+
+body.mobile.address-book-page #content div.form {
+    padding: 0 20px
+}
+
+body.mobile hr.account-header,body.mobile hr.form-header {
+    display: none
+}
+
+body.mobile.error-page {
+    background: #fff
+}
+
+body.mobile #error-content {
+    min-width: 280px;
+    width: 100%;
+    height: auto;
+    background: 0 0
+}
+
+body.mobile #error-content .error-block {
+    padding: 10px;
+    width: auto
+}
+
+body.mobile #error-content .error-block h1 {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 1.95em;
+    text-transform: none;
+    font-weight: lighter;
+    line-height: 1.2em;
+    margin-bottom: 35px
+}
+
+body.mobile #error-content .error-block h1.error-logo {
+    margin-bottom: 20px
+}
+
+body.mobile #error-content .error-block h1.error-logo a {
+    width: 140px;
+    height: 41px;
+    background: url("web-app-logo-mobile");
+    display: block;
+    background-size: 140px 41px;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 0 auto
+}
+
+body.mobile #error-content .error-block p a {
+    font-weight: 700
+}
+
+body.mobile #error-content .error-block ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    width: 310px
+}
+
+body.mobile #error-content .error-block ul li {
+    width: 50%;
+    float: left;
+    display: inline;
+    margin-bottom: 10px
+}
+
+body.mobile #error-content .error-block ul li a {
+    text-decoration: none
+}
+
+body.mobile #error-content .error-block ul li a:hover {
+    text-decoration: underline
+}
+
+body.mobile #error-content .error-block a {
+    font-size: 1.4625em
+}
+
+body.mobile .register-options-error-block {
+    padding: 17px;
+    border: 1px solid #ede1c0;
+    background-color: #fdf0ce;
+    font-size: 18px
+}
+
+body.mobile .register-options-error-block a {
+    text-decoration: none
+}
+
+body.mobile .register-options-error-block h5 {
+    font-weight: 700;
+    color: #000
+}
+
+body.mobile .modal.modal-preference {
+    width: 100%;
+    padding: 0;
+    background-color: #eee
+}
+
+body.mobile .preference-image {
+    width: 30%
+}
+
+body.mobile .preference-body {
+    width: 70%;
+    padding: 16px 16px 17px 16px
+}
+
+body.mobile .blocker {
+    padding: 0
+}
+
+body.mobile .preference-summary {
+    width: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box
+}
+
+body.mobile .row-preference {
+    height: 170px
+}
+
+body.mobile .row-preference.row-preference-header {
+    height: 105px
+}
+*/
+
+
+
+html.layout-v2 {
+    background-color: #f1f1f1
+}
+
+
+
+
+/* ======= start's here ==========  
+html.layout-v2 body.mobile {
+    background-color: #f1f1f1
+}
+
+html.layout-v2 body.mobile div#header {
+    padding: 23px 0 23px 1px;
+    height: 18px;
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto
+}
+
+html.layout-v2 body.mobile div#header #web-app-logo,html.layout-v2 body.mobile div#header a.home,html.layout-v2 body.mobile div#header a.home img {
+    width: 61px;
+    height: 18px;
+    float: none
+}
+
+html.layout-v2 body.mobile div#header h1.title {
+    margin: 0 60px
+}
+
+html.layout-v2 body.mobile div#header #norton-seal {
+    right: 18.5px;
+    top: 15.5px
+}
+
+html.layout-v2 body.mobile div#header #norton-seal img {
+    width: 60px
+}
+
+html.layout-v2 body.mobile div#content {
+    max-width: 375px;
+    padding-top: 0
+}
+
+html.layout-v2 body.mobile div#content .mobile-spacer {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background: #fff
+}
+
+html.layout-v2 body.mobile div#content .mobile-spacer .error-block {
+    padding-left: 40px;
+    background-position: 10px center
+}
+
+html.layout-v2 body.mobile div#content .native-mobile .mobile-spacer {
+    margin-left: 0;
+    margin-right: 0
+}
+
+html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: .4px;
+    display: block;
+    background-color: #fae7ec;
+    border: 0;
+    padding: 9px 15px;
+    position: static;
+    box-shadow: none;
+    max-width: none;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 10px
+}
+
+html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover span {
+    padding: 0
+}
+
+html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover::after,html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover:after {
+    display: none
+}
+
+html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover::before,html.layout-v2 body.mobile div#content .qa-forgot-password:hover+.qa-forgot-password-failover:before {
+    display: none
+}
+
+html.layout-v2 body.mobile div#content .qa-sign-in-different-account {
+    display: block;
+    margin-bottom: 10px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info {
+    margin-bottom: 15px;
+    margin-top: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .signin-options {
+    margin-top: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .options-error-block.wide-open {
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    background-position: 20px center
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .options-error {
+    width: 80%;
+    padding-left: 15%
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info p.qa-failover-subtitle {
+    margin: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .mobile-subtitle {
+    margin: 0 18px 21px 18px
+}
+
+html.layout-v2 body.mobile div#content #main .container .success-block {
+    background-position: 20px 20px;
+    padding-left: 45px
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options {
+    height: 58px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 10px solid #f1f1f1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title {
+    border: 0;
+    display: table;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    color: #767676;
+    position: relative;
+    padding: 0;
+    float: right
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title,html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title a,html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title a.qa-already,html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title p.qa-already {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title.qa-sign-in a {
+    word-break: break-word;
+    display: table-cell
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title .qa-header {
+    vertical-align: middle;
+    padding: 0 10px;
+    display: table-cell
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title a,html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title p.qa-already {
+    line-height: 1.7;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    color: #767676;
+    padding: 0 10px
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title.active {
+    border-bottom: 2px solid #2d2d2d;
+    color: #2d2d2d
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title.active h2.qa-header a,html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title.active p.qa-already {
+    color: #2d2d2d;
+    word-break: break-word
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title:first-of-type::after {
+    content: " ";
+    height: 20px;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    background: #2d2d2d;
+    opacity: .1
+}
+
+html.layout-v2 body.mobile div#content #main .container .signin-options .qa-title:first-of-type {
+    float: left
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field #recaptchaError {
+    float: none
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field div.widget-field {
+    float: left!important;
+    margin-left: 18.75px!important
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field input:not(.input-validation-error):focus {
+    border-color: #0770cf
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field input,html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field label,html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field select {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field label.checkbox {
+    padding-left: 0;
+    text-transform: initial;
+    color: #2d2d2d;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field div.tickbox-container label.radio {
+    margin-left: 35px;
+    text-transform: capitalize;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field .last-subfield.select-list select {
+    padding-left: 5px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.submit input {
+    min-height: 40px;
+    height: auto!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body.mobile div#content #main .container .options .connect .text span {
+    margin-left: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .forgotten-password {
+    margin-bottom: 20px
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .forgotten-password .qa-or-label {
+    display: none
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .forgotten-password .qa-forgot-password,html.layout-v2 body.mobile div#content #main .container.existing-account .forgotten-password .qa-sign-in-register-new {
+    display: block;
+    text-align: center
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .forgotten-password .qa-sign-in-register-new {
+    margin-top: 10px
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .already-reg-title {
+    margin-bottom: 20px;
+    line-height: 1
+}
+
+html.layout-v2 body.mobile div#content #main .container.existing-account .already-reg-title span {
+    line-height: .5
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .actions-btn {
+    width: 90%;
+    margin: 20px auto
+}
+
+html.layout-v2 body.mobile div#content #main .container div.info .actions-btn a.info-link.reset-email-link {
+    padding: 7px 20px;
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    width: auto
+}
+
+html.layout-v2 body.mobile.additional-details-page #content .native-mobile .mobile-spacer {
+    margin-left: 0;
+    margin-right: 0
+}
+
+html.layout-v2 body.mobile .card-types {
+    position: relative;
+    background: #fff;
+    border-top: 10px solid #f1f1f1;
+    height: 120px
+}
+
+html.layout-v2 body.mobile .card-types .wrap {
+    min-width: 320px;
+    max-width: 375px;
+    height: 100px
+}
+
+html.layout-v2 body.mobile .card-types .card-list {
+    float: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 120px;
+    text-align: left
+}
+
+html.layout-v2 body.mobile .card-types h3 {
+    float: none;
+    display: block;
+    padding: 19px 0 00px 17px;
+    margin-bottom: 0;
+    line-height: initial;
+    width: initial;
+    text-align: left;
+    height: auto
+}
+
+html.layout-v2 body.mobile .card-types img {
+    width: 40px;
+    padding-left: 2px
+}
+
+html.layout-v2 body.mobile.is-last-login h1.title.qa-title {
+    margin-top: 40px
+}
+
+html.layout-v2 body.mobile.is-last-login p.subtitle.qa-subtitle {
+    width: 90%;
+    margin: 0 auto;
+    float: none
+}
+
+html.layout-v2 body.mobile.is-last-login .signin-link-spacer {
+    margin-top: 20px!important
+}
+
+html.layout-v2 body.mobile.link-account-page .info.info-centre p.mobile-subtitle.subtitle {
+    width: 90%;
+    float: none
+}
+
+html.layout-v2 body.mobile.forgot-password-page div.info-centre p.subtitle {
+    text-align: left;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none
+}
+
+html.layout-v2 body.mobile.additional-details-page div.info-centre .subtitle-container {
+    margin-left: 0;
+    margin-right: 0
+}
+
+html.layout-v2 body.mobile.additional-details-page div.info-centre .subtitle-container .mobile-subtitle,html.layout-v2 body.mobile.additional-details-page div.info-centre .subtitle-container .qa-subtitle,html.layout-v2 body.mobile.additional-details-page div.info-centre .subtitle-container .subtitle {
+    max-width: 100%
+}
+
+html.layout-v2 body.mobile.additional-details-page .container,html.layout-v2 body.mobile.register-page .container {
+    padding-bottom: 10px
+}
+
+
+html.layout-v2 body.mobile .unavailable-page div.info-centre p.subtitle {
+    text-align: left;
+    margin: 20px auto 0;
+    float: none;
+    max-width: 93%
+}
+
+html.layout-v2 body.mobile .unavailable-page div.info-centre span.qa-password-expire-label {
+    text-align: left;
+    margin: 20px auto 0;
+    display: block;
+    max-width: 100%
+}
+
+
+html.layout-v2.is-checkout body.mobile div#header #web-app-logo {
+    left: 18px
+}
+
+html.layout-v2.is-checkout body.mobile #content {
+    padding-bottom: 0
+}
+
+html.layout-v2 body.mobile div#content #main .register div.form form fieldset div.field label.checkbox.qa-marketing-label,html.layout-v2 body.mobile div#content #main .register-social div.form form fieldset div.field label.checkbox.qa-marketing-label {
+    line-height: 44px;
+    padding-left: 12px;
+    margin: 0;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html.layout-v2 body.mobile div#content #main .register .consent .qa-contact-preferences,html.layout-v2 body.mobile div#content #main .register-social .consent .qa-contact-preferences {
+    padding-left: 0
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form form fieldset .consent div.field input[type=checkbox]:checked.checkbox~label.checkbox {
+    color: #fff
+}
+
+html.layout-v2 body.mobile div#content #main div.container .social-register fieldset .field,html.layout-v2 body.mobile div#content #main div.container div.form.form-register fieldset .field {
+    margin: 12.4px 0 19px 18px;
+    width: 90%
+}
+
+body.mobile .form fieldset .checkbox-container.consent {
+    width: 100%;
+    padding: 0 18px 0 18px
+}
+
+html.layout-v2 body.mobile div#content #main .container div.form fieldset div.field.tandc,html.layout-v2 body.mobile div#content #main div.container .social-register fieldset .checkbox-container .field,html.layout-v2 body.mobile div#content #main div.container div.form.form-register fieldset .checkbox-container .field {
+    margin: 9px 18px 0 19px
+}
+
+html.layout-v2 body.mobile div#content #main .register div.form form fieldset div.submit input,html.layout-v2 body.mobile div#content #main .register-social div.form form fieldset div.submit input {
+    margin: 6% 6% 0 6%;
+    min-width: 90%
+}
+
+html.layout-v2 body.mobile .contain-check {
+    width: 90%;
+    padding-left: 18px
+}
+
+html.layout-v2 body.mobile .tell-me-more {
+    padding-left: 0
+}
+
+body.mobile #content #main .container div.form div.field input.qa-password-textbox {
+    padding-right: 53px
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.consent {
+    width: 100%
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container.consent .field {
+    width: 90%
+}
+
+body.mobile #content #main .container div.form.social-register.native-mobile div.checkbox-container .field {
+    width: 90%
+}
+
+body.mobile #content #main .container.register-social .social-register.native-mobile div.field {
+    width: 90%
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.checkbox-container {
+    margin-left: 0;
+    margin-right: 0
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.submit {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%
+}
+
+body.mobile .container-checkbox {
+    width: 100%
+}
+
+body.mobile .col-xs-6 {
+    width: 50%;
+    display: inline-block;
+    float: left
+}
+
+body.mobile .container-checkbox {
+    margin: 0 0 10px 0;
+    max-width: 100%
+}
+
+body.mobile #content #main .container div.form.form-register.native-mobile div.field.recaptcha.widget-field {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0
+}
+
+html.layout-v2 body.mobile div#content #main div.container div.form.form-register fieldset .field.recaptcha {
+    margin-bottom: 0
+}
+
+.all-check .checkbox:focus,.qa-submit:focus,body.mobile #content #main .container div.form div.field input:focus,body.mobile #content #main .container div.form.form-register div.select-list.subfield select:focus,html.layout-v2 body.mobile div#content #main .container div.form form fieldset div.field select:focus {
+    outline: 0;
+    box-shadow: inset 0 0 3px 1px #0770cf
+}
+
+html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header,html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header a {
+    padding: 0
+}
+
+@media screen and (max-width: 390px) {
+    html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header,html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header a {
+        font-size:12px;
+        line-height: 1.7;
+        letter-spacing: 1.7px;
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 325px) {
+    html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header,html.layout-v2 body.mobile.lang-ru div#content #main .container .signin-options .qa-title .qa-header a {
+        font-size:10px;
+        padding: 0
+    }
+}
+*/
+
+/* ======= start's here ==========  */
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStdBookOblique;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStd;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: FuturaStdBookOblique;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+    display: block
+}
+
+audio,canvas,video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],template {
+    display: none
+}
+
+html {
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+button,html,input,select,textarea {
+    font-family: sans-serif
+}
+
+body {
+    margin: 0
+}
+
+a {
+    background: 0 0
+}
+
+a:focus {
+    outline: thin dotted
+}
+
+a:active,a:hover {
+    outline: 0
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0
+}
+
+h2 {
+    font-size: 15px;
+    margin: 0
+}
+
+h3 {
+    font-size: 13px;
+    margin: 0
+}
+
+h4 {
+    font-size: 12px;
+    margin: 0
+}
+
+h5 {
+    font-size: .90636em;
+    margin: 0
+}
+
+h6 {
+    font-size: .73164em;
+    margin: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code,kbd,pre,samp {
+    font-family: monospace,serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+q:after,q:before {
+    content: '';
+    content: none
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal
+}
+
+button,input,select,textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline
+}
+
+button,input {
+    line-height: normal
+}
+
+button,select {
+    text-transform: none
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],input[disabled] {
+    cursor: default
+}
+
+input[type=checkbox],input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: .78em;
+    line-height: 18px;
+    min-height: 100%
+}
+
+a:active,a:hover,a:link,a:visited {
+    color: #222
+}
+
+h1 {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 25px;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1px
+}
+
+h1 span.title-subline {
+    font-size: 19px;
+    text-transform: none;
+    display: block;
+    word-wrap: break-word;
+    font-weight: 400
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px
+}
+
+h3 {
+    font-size: 13px
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 20px;
+    line-height: 13px
+}
+
+h5 {
+    font-size: .90636em;
+    font-weight: 400;
+    color: #767676
+}
+
+h6 {
+    font-size: .73164em
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: .5px
+}
+
+div {
+    margin: 0;
+    padding: 0
+}
+
+label {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: .5px
+}
+
+div.clear {
+    height: 1px;
+    clear: both;
+    width: 100%
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.hidden {
+    display: none
+}
+
+.hidden-radio {
+    opacity: 0
+}
+
+hidden-radio:focus {
+    outline: 0;
+    box-shadow: inset 0 0 3px 1px #0770cf
+}
+
+div#header {
+    padding: 20px 0 14px 1px;
+    height: 28px
+}
+
+div#header a.home {
+    width: 95px;
+    height: 28px;
+    float: left
+}
+
+div#header a.home img {
+    width: 95px;
+    height: 28px
+}
+
+div#header a.home img.full {
+    width: auto;
+    height: auto
+}
+
+div#header #norton-seal {
+    position: absolute;
+    top: 19px;
+    right: -100px
+}
+
+div#content {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div#content div#header {
+    padding: 20px 0 14px 1px
+}
+
+div#content div#main {
+    background-color: #fff;
+    padding-top: 1px;
+    margin-bottom: 140px
+}
+
+div#content div.container {
+    border: 1px solid #eee;
+    position: relative
+}
+
+div#content div.container a:hover,div#content div.container input.btn:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+div#content,div#header {
+    width: 100%;
+    max-width: 720px;
+    min-width: 540px
+}
+
+.qa-hide,.qa-reveal {
+    position: relative;
+    float: right;
+    margin-top: -33px;
+    margin-right: 6px;
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2d2d2d
+}
+
+html.layout-v2 {
+    background-color: #eee
+}
+
+html.layout-v2 body {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    background-color: #eee
+}
+
+html.layout-v2 body div#header {
+    padding: 25px 0 25px 1px;
+    text-align: center
+}
+
+html.layout-v2 body div#header a.home {
+    float: none
+}
+
+html.layout-v2 body div#header h1.title {
+    height: 22px;
+    line-height: 22px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px
+}
+
+html.layout-v2 body div#content {
+    max-width: 650px
+}
+
+html.layout-v2 body div#content .mobile-spacer {
+    margin-left: 0;
+    margin-right: 0
+}
+
+html.layout-v2 body div#content a.qa-forgot-password:hover,html.layout-v2 body div#content a.qa-sign-in-register-new:hover {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #2d2d2d
+}
+
+html.layout-v2 body div#content a.qa-create-account {
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #979797
+}
+
+html.layout-v2 body div#content .qa-forgot-password-failover {
+    display: none
+}
+
+html.layout-v2 body div#content div.forgotten-password {
+    position: relative
+}
+
+html.layout-v2 body div#content .qa-forgot-password:hover+.qa-forgot-password-failover {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    display: block;
+    background-color: #fae7ec;
+    border: 2px solid #ce1948;
+    padding: 10px;
+    z-index: 10;
+    max-width: 500px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    box-sizing: border-box
+}
+
+html.layout-v2 body div#content .qa-forgot-password:hover+.qa-forgot-password-failover::after {
+    position: absolute;
+    left: 10px;
+    bottom: -15px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #ce1948;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 1
+}
+
+html.layout-v2 body div#content .qa-forgot-password:hover+.qa-forgot-password-failover::before {
+    position: absolute;
+    left: 10px;
+    bottom: -12px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #fae7ec;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 2
+}
+
+html.layout-v2 body div#content .error-block,html.layout-v2 body div#content .success-block {
+    background-color: #fae7ec;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px
+}
+
+html.layout-v2 body div#content .error-block h5,html.layout-v2 body div#content .success-block h5 {
+    color: #222;
+    font-size: 12px
+}
+
+html.layout-v2 body div#content .error-block p,html.layout-v2 body div#content .error-block span,html.layout-v2 body div#content .error-block ul,html.layout-v2 body div#content .success-block p,html.layout-v2 body div#content .success-block span,html.layout-v2 body div#content .success-block ul {
+    color: #222;
+    font-size: .975em
+}
+
+html.layout-v2 body div#content .error-block ul,html.layout-v2 body div#content .success-block ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style-position: inside
+}
+
+html.layout-v2 body div#content .error-block h5 {
+    color: red
+}
+
+html.layout-v2 body div#content .success-block {
+    background-color: #cceedf;
+    margin-left: -1px;
+    margin-right: -1px
+}
+
+/*
+html.layout-v2 body div#content .error-block,html.layout-v2 body div#content .options-error-block.wide-open {
+    text-align: left;
+    padding-left: 70px;
+    background-image: url("information image");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 30px center;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+*/
+
+html.layout-v2 body div#content .error-block h5,html.layout-v2 body div#content .options-error-block.wide-open h5 {
+    display: none
+}
+
+html.layout-v2 body div#content .error-block ul,html.layout-v2 body div#content .options-error-block.wide-open ul {
+    margin: 0
+}
+
+html.layout-v2 body div#content .error-block ul,html.layout-v2 body div#content .error-block ul li,html.layout-v2 body div#content .options-error-block.wide-open ul,html.layout-v2 body div#content .options-error-block.wide-open ul li {
+    list-style: none
+}
+
+html.layout-v2 body div#content .success-block {
+    background-image: url(../imgs/shape-checkmark.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 32px center;
+    padding-left: 60px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body div#content .options-error-block.wide-open {
+    background-color: #fae7ec;
+    float: none;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 22px 0;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 25px
+}
+
+html.layout-v2 body div#content .options-error-block.wide-open p.qa-failover-subtitle {
+    text-align: left;
+    padding-left: 45px;
+    margin: 0
+}
+
+html.layout-v2 body div#content div#header {
+    padding: 25px 0 25px 1px
+}
+
+html.layout-v2 body div#content #main div.container {
+    border: 0
+}
+
+html.layout-v2 body div#content #main div.container h1.qa-use-email {
+    margin-top: 18px;
+    margin-bottom: 18px
+}
+
+html.layout-v2 body div#content #main div.container div.form form {
+    border-top: 0
+}
+
+html.layout-v2 body div#content #main div.container div.form span.qa-email-validation.field-validation-error {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px
+}
+
+html.layout-v2 body div#content #main div.container div.form h1.qa-use-email.last-child,html.layout-v2 body div#content #main div.container div.form p.qa-use-email.last-child {
+    margin-top: 5px
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register {
+    margin-top: 0
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register h1.qa-use-email,html.layout-v2 body div#content #main div.container div.form.form-register p.qa-use-email {
+    padding-bottom: 5px
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register form {
+    padding-top: 0
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register fieldset {
+    margin-top: 0
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register fieldset div.field select#BirthYear~.tick {
+    right: 85px;
+    display: none
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register fieldset div.field select#BirthYear~.field-message {
+    right: -10px;
+    top: 51px
+}
+
+html.layout-v2 body div#content #main div.container div.form div.field div.select-list {
+    background: url(../imgs/sortdown_new.png) no-repeat right;
+    background-color: #fff;
+    background-size: 18px 7px
+}
+
+html.layout-v2 body div#content #main div.container div.form div.field select#BirthYear~.tick {
+    right: 85px;
+    display: none
+}
+
+html.layout-v2 body div#content #main div.container div.form div.field select#BirthYear~.field-message {
+    right: -10px;
+    top: 51px
+}
+
+html.layout-v2 body div#content #main div.container div.qa-switch-account {
+    text-align: center;
+    padding: 20px 0 30px;
+    margin: 0 35px
+}
+
+html.layout-v2 body div#content #main div.container div.qa-switch-account div.not-you-label {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body div#content #main div.container div.qa-switch-account a:last-of-type {
+    text-transform: lowercase
+}
+
+html.layout-v2 body div#content #main div.container div.qa-switch-account a {
+    text-decoration: none;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1px
+}
+
+html.layout-v2 body div#content .terms {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    float: left
+}
+
+html.layout-v2 body div#content .terms label,html.layout-v2 body div#content .terms label a {
+    color: #2d2d2d;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-decoration: none
+}
+
+html.layout-v2 body div#content .terms .qa-tandc-link,html.layout-v2 body div#content .terms label a {
+    text-decoration: none;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1px
+}
+
+html.layout-v2 body div#content .terms .qa-tandc-link {
+    border-bottom-color: #666
+}
+
+html.layout-v2 body div#content .checkout-form {
+    margin: 24px auto 40px;
+    width: 90%
+}
+
+html.layout-v2 body div#content input[type=submit].btn {
+    width: 100%;
+    border: none
+}
+
+html.layout-v2 body div#content .btn {
+    background: #2d2d2d;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    display: block;
+    max-width: 350px;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body h1.title {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px
+}
+
+html.layout-v2 body div.signin-options {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 15px
+}
+
+html.layout-v2 body div.signin-options div.title {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    border-bottom: 1px solid #767676;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 20px 0 17px
+}
+
+html.layout-v2 body div.signin-options div.title a,html.layout-v2 body div.signin-options div.title p {
+    padding: 0;
+    margin: 0
+}
+
+html.layout-v2 body div.signin-options div.title,html.layout-v2 body div.signin-options div.title a,html.layout-v2 body div.signin-options div.title h2.qa-header,html.layout-v2 body div.signin-options div.title p.qa-already {
+    text-decoration: none;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.7
+}
+
+html.layout-v2 body div.signin-options div.title a,html.layout-v2 body div.signin-options div.title a:hover {
+    border-bottom: 0!important;
+    color: #767676
+}
+
+html.layout-v2 body div.signin-options div.title.active {
+    border: 1px solid #767676;
+    border-bottom: 0
+}
+
+html.layout-v2 body div.info-centre h1.qa-subtitle,html.layout-v2 body div.info-centre p.qa-subtitle,html.layout-v2 body h1.qa-use-email,html.layout-v2 body p.qa-use-email {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.3px
+}
+
+html.layout-v2 body div.info-centre h1.title {
+    margin-top: 25px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    letter-spacing: 2.3px
+}
+
+html.layout-v2 body div.info-centre p.mobile-subtitle,html.layout-v2 body div.info-centre p.subtitle {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    max-width: 100%;
+    padding: 0 10px
+}
+
+html.layout-v2 body div.info-centre p.mobile-subtitle {
+    padding: 0;
+    margin: 0 0 21px 0;
+    width: auto;
+    display: block
+}
+
+html.layout-v2 body div.info-centre h1.qa-use-email,html.layout-v2 body div.info-centre p.qa-use-email {
+    margin-top: 5px
+}
+
+html.layout-v2 body.forgot-password-page div.info-centre p.subtitle {
+    text-align: left;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none
+}
+
+html.layout-v2 body.forgot-password-page.sent div.info-centre p.subtitle {
+    text-align: left
+}
+
+/* ======= start's here ==========  
+html.layout-v2 body.link-account-page .info.info-centre p.mobile-subtitle.subtitle {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left
+}
+
+html.layout-v2 body.link-account-page .info.info-centre p.mobile-subtitle.subtitle.last-child {
+    margin-top: 15px
+}
+
+html.layout-v2 body.link-account-page form .submit {
+    margin-top: 10px
+}
+
+html.layout-v2 body.link-account-page form .forgotten-password {
+    margin-bottom: 10px
+}
+
+html.layout-v2 body.link-account-page div.signin h2 p.qa-subtitle.subtitle {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    text-transform: uppercase
+}
+
+*/
+
+html.layout-v2 body.sign-in-page .already-reg-title {
+    padding: 15px 0 5px;
+    text-align: center;
+    margin: 0
+}
+
+html.layout-v2 body.sign-in-page .forgotten-password .qa-or-label {
+    height: 20px;
+    border-right: 2px solid #eee;
+    margin-right: 10px;
+    margin-left: 5px
+}
+
+/*
+html.layout-v2 body.sign-in-page .title-subline.informative {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    margin: 20px auto 20px;
+    width: auto;
+    padding: 0 0 3px 25px;
+    background-image: url(" information image");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center left
+}
+*/
+
+
+html.layout-v2 body.sign-in-page:not(.mobile) div.signin-options {
+    padding: 25px 20px 15px
+}
+
+html.layout-v2 body.sign-in-page.is-last-login h1.title.qa-title {
+    text-align: center;
+    margin: 24px auto
+}
+
+html.layout-v2 body.sign-in-page.is-last-login p.subtitle.qa-subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    color: #666
+}
+
+html.layout-v2 body.sign-in-page.is-last-login .forgotten-password {
+    margin-bottom: 15px
+}
+
+html.layout-v2 body.sign-in-page.is-last-login div.info.info-centre {
+    margin-bottom: 10px
+}
+
+html.layout-v2 body.sign-in-page.is-last-login div.info.info-centre .options.one-button {
+    margin-bottom: 0
+}
+
+html.layout-v2 body.additional-details-page div.info-centre .subtitle-container,html.layout-v2 body.register-page div.info-centre .subtitle-container {
+    margin-left: -25px;
+    margin-right: -25px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-transform: capitalize;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+html.layout-v2 body.additional-details-page div.info-centre .subtitle-container .mobile-subtitle,html.layout-v2 body.additional-details-page div.info-centre .subtitle-container .qa-subtitle,html.layout-v2 body.additional-details-page div.info-centre .subtitle-container .subtitle,html.layout-v2 body.register-page div.info-centre .subtitle-container .mobile-subtitle,html.layout-v2 body.register-page div.info-centre .subtitle-container .qa-subtitle,html.layout-v2 body.register-page div.info-centre .subtitle-container .subtitle {
+    padding: 15px 25px;
+    text-transform: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+html.layout-v2 body.additional-details-page div.info-centre .subtitle-container p.qa-subtitle.subtitle,html.layout-v2 body.register-page div.info-centre .subtitle-container p.qa-subtitle.subtitle {
+    text-align: left;
+    padding-left: 32px
+}
+
+html.layout-v2 body.additional-details-page div.info-centre .subtitle-container .qa-final-title,html.layout-v2 body.register-page div.info-centre .subtitle-container .qa-final-title {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 5px
+}
+
+html.layout-v2 body.additional-details-page fieldset div.field,html.layout-v2 body.register-page fieldset div.field {
+    padding-left: 0
+}
+
+html.layout-v2 body.additional-details-page fieldset div.field.checkboxes,html.layout-v2 body.register-page fieldset div.field.checkboxes {
+    padding-right: 0;
+    width: 100%;
+    text-align: left
+}
+
+html.layout-v2 body.additional-details-page fieldset div.field.checkboxes label.checkbox,html.layout-v2 body.register-page fieldset div.field.checkboxes label.checkbox {
+    text-align: left!important;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body.additional-details-page fieldset div.submit,html.layout-v2 body.register-page fieldset div.submit {
+    text-align: left
+}
+
+html.layout-v2 body.additional-details-page div.terms,html.layout-v2 body.register-page div.terms {
+    text-align: left;
+    padding-left: 38px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    color: #2d2d2d
+}
+
+html.layout-v2 body.additional-details-page div.terms label,html.layout-v2 body.additional-details-page div.terms label a,html.layout-v2 body.register-page div.terms label,html.layout-v2 body.register-page div.terms label a {
+    color: #2d2d2d;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body .actions-btn {
+    margin: 35px 10% 5px;
+    padding-bottom: 20px;
+    width: 80%
+}
+
+html.layout-v2 body .actions-btn .qa-header .info-link.reset-email-link:first-child {
+    float: right
+}
+
+html.layout-v2 body .actions-btn .info-link.reset-email-link:first-child {
+    float: left
+}
+
+html.layout-v2 body .actions-btn .info-link.reset-email-link {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: 220px;
+    width: 40%;
+    float: right
+}
+
+@media screen and (max-width: 600px) {
+    html.layout-v2 body .actions-btn .info-link.reset-email-link:first-child {
+        float:none;
+        display: inline-block
+    }
+
+    html.layout-v2 body .actions-btn .qa-header .info-link.reset-email-link:first-child {
+        float: none;
+        display: inline-block
+    }
+
+    html.layout-v2 body .actions-btn .info-link.reset-email-link {
+        width: 100%;
+        margin: 5px 0
+    }
+}
+
+html.layout-v2 body.register-page div.info {
+    margin-bottom: 0
+}
+
+html.layout-v2 body.register-page div.signin-options {
+    padding-bottom: 6px
+}
+
+html.layout-v2 body.register-page div.info-centre h1.qa-subtitle {
+    padding-bottom: 10px
+}
+
+html.layout-v2 body.register-page div.info-centre p.qa-subtitle-short {
+    padding-bottom: 0;
+    margin-top: 19px;
+    padding-top: 0
+}
+
+html.layout-v2 body.register-page div.info-centre p.qa-subtitle-tall {
+    padding-bottom: 10px;
+    margin-top: 28px
+}
+
+
+html.layout-v2 body.sign-in-page .existing-account .info.info-centre .signin {
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    padding-bottom: 25px
+}
+
+html.layout-v2 body.sign-in-page .existing-account .info.info-centre .signin h1.title {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    margin-bottom: 15px
+}
+
+html.layout-v2 body.sign-in-page .existing-account .info.info-centre .signin h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body .unavailable-page h1.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body .unavailable-page div.info-centre h1.title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body .unavailable-page div.info-centre p.subtitle {
+    text-align: center
+}
+
+html.layout-v2 body .unavailable-page div.info-centre span.qa-password-expire-label {
+    margin: 20px auto 25px;
+    display: block;
+    max-width: 90%
+}
+
+html.layout-v2 body div.info {
+    padding: 0 25px 10px;
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+html.layout-v2 body div.signin {
+    padding-top: 20px
+}
+
+html.layout-v2 body div.signin h1 {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body div.signin h2 a {
+    text-decoration: none;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1px
+}
+
+html.layout-v2 body fieldset {
+    padding-bottom: 10px
+}
+
+html.layout-v2 body fieldset div.field {
+    width: 63%;
+    padding: 0 18.5%
+}
+
+html.layout-v2 body fieldset div.field label {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    color: #767676;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body fieldset div.field label:not(.checkbox) {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+html.layout-v2 body fieldset div.field>label:not(.checkbox)::after,html.layout-v2 body fieldset div.field>label:not(.checkbox):after {
+    content: ":";
+    width: auto;
+    color: #767676
+}
+
+html.layout-v2 body fieldset div.field input:not(.checkbox) {
+    height: 45px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body fieldset div.field input:not(.input-validation-error):focus {
+    border-color: #0770cf
+}
+
+html.layout-v2 body fieldset div.field span.hide,html.layout-v2 body fieldset div.field span.reveal {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    margin-top: -33px
+}
+
+html.layout-v2 body fieldset div.field div.tickbox-container {
+    border: 0;
+    padding: 5px 0;
+    width: auto;
+    margin-right: 55px;
+    background-image: url(../imgs/radio-default2x.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 22px
+}
+
+div.form html.layout-v2 body fieldset div.field div.tickbox-container label.checkbox,html.layout-v2 body div.form fieldset div.field div.tickbox-container label.checkbox,html.layout-v2 body fieldset div.field div.tickbox-container label.radio {
+    margin-left: 35px;
+    text-transform: capitalize;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .4px;
+    margin-right: 0
+}
+
+html.layout-v2 body fieldset div.field div.tickbox-container.selected {
+    border: 0;
+    padding: 5px 0;
+    background-image: url(../imgs/radio-selected2x.png)
+}
+
+html.layout-v2 body fieldset div.field span.hint {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px
+}
+
+html.layout-v2 body fieldset span#recaptchaError {
+    bottom: 60px
+}
+
+html.layout-v2 body fieldset div#recaptchaWidget {
+    margin-bottom: -2px;
+    padding-top: 10px
+}
+
+html.layout-v2 body fieldset div.submit input {
+    width: 63%;
+    height: 45px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    letter-spacing: 2px
+}
+
+html.layout-v2 body fieldset div.forgotten-password {
+    margin-top: 22px
+}
+
+html.layout-v2 body fieldset div.forgotten-password a {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-decoration: none
+}
+
+html.layout-v2 body fieldset div.forgotten-password a:hover {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #2d2d2d
+}
+
+html.layout-v2 body .hr-with-text.qa-or {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px
+}
+
+html.layout-v2.is-checkout body {
+    height: 100%
+}
+
+html.layout-v2.is-checkout div#header {
+    position: relative
+}
+
+html.layout-v2.is-checkout div#header a.home {
+    position: absolute;
+    top: 0;
+    left: -110px;
+    bottom: 0;
+    margin: auto
+}
+
+html.layout-v2.is-checkout div#content {
+    min-height: 100%;
+    height: auto!important;
+    height: 100%;
+    margin: 0 auto -70px
+}
+
+html.layout-v2.is-checkout div#content #main .container .options #signup-email .connect.email .icon {
+    display: none!important
+}
+
+html.layout-v2.is-checkout div#content #main .container .options #signup-email .connect.email .text.qa-sign-up-with-email {
+    left: 0!important
+}
+
+html.layout-v2.is-checkout .push-cards {
+    height: 1px
+}
+
+html.layout-v2.is-checkout .card-types {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0;
+    height: 70px
+}
+
+html.layout-v2.is-checkout .card-types .wrap {
+    max-width: 650px;
+    min-width: 540px;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+html.layout-v2.is-checkout .card-types h3 {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    color: #767676;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 70px;
+    line-height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 2px
+}
+
+html.layout-v2.is-checkout .card-types .card-list {
+    padding-top: 15px;
+    width: 162px;
+    height: 20px;
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+.shopping-on-a-shared {
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-align: center;
+    color: #2d2d2d
+}
+
+html.layout-v2 body div#content #main div.container div.form.form-register {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+html.layout-v2 body div#content #main div.container div.form.social-register {
+    margin: 45px auto 0 auto;
+    padding: 0;
+    width: 100%
+}
+
+html.layout-v2 body.additional-details-page fieldset div.field,html.layout-v2 body.register-page fieldset div.field {
+    padding-left: 40px
+}
+
+html.layout-v2 body .register fieldset div.submit input,html.layout-v2 body .register-social fieldset div.submit input {
+    margin: 32px 0 0 40px
+}
+
+html.layout-v2 body.additional-details-page fieldset div.field,html.layout-v2 body.register-page fieldset div.field {
+    width: 55%
+}
+
+div.form fieldset .checkbox-container.consent {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 40px 24px 40px;
+    box-sizing: border-box
+}
+
+.contain-check {
+    width: 360px
+}
+
+.checkbox-container.consent .qa-contact-preferences {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    display: block
+}
+
+.checkbox-container.consent .qa-preferences-message {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    color: #2d2d2d;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0;
+    display: inline-block;
+    max-width: 360px;
+    float: left
+}
+
+html.layout-v2 body.additional-details-page fieldset .consent div.field,html.layout-v2 body.register-page fieldset .consent div.field {
+    margin: 9px 0 0 0
+}
+
+.all-check {
+    position: absolute;
+    text-align: center
+}
+
+body.mobile .all-check {
+    right: 10px
+}
+
+body.full .all-check,body.tablet .all-check {
+    right: 30px
+}
+
+.qa-all-pref-label-clear {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.qa-all-pref-label-all {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.all-check input[type=checkbox].qa-all-preferences-checkbox,.all-check input[type=checkbox].qa-all-preferences-checkbox-all,.all-check input[type=checkbox].qa-all-preferences-checkbox-clear {
+    position: absolute;
+    top: 10px;
+    display: none
+}
+
+html.layout-v2 body fieldset .checkbox-container.consent div.all-check input[type=checkbox]:checked.checkbox~label.checkbox {
+    background: 0 0;
+    color: #2d2d2d;
+    padding: 0;
+    width: 56px
+}
+
+html.layout-v2 body fieldset .checkbox-container.consent div.all-check input[type=checkbox]:checked.checkbox~label.qa-all-pref-label-checked {
+    background: 0 0;
+    color: #ff0;
+    padding: 0;
+    width: 56px
+}
+
+html.layout-v2 body fieldset .checkbox-container.consent div.field input[type=checkbox].checkbox~label.qa-all-pref-label,html.layout-v2 body fieldset .checkbox-container.consent div.field input[type=checkbox].checkbox~label.qa-all-pref-label-all,html.layout-v2 body fieldset .checkbox-container.consent div.field input[type=checkbox].checkbox~label.qa-all-pref-label-clear {
+    height: 30px;
+    width: 56px;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block
+}
+
+.tell-me-more {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 16.6px;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.tell-me-more label {
+    font-size: 14px
+}
+
+.qa-all-pref-label-all,.qa-all-pref-label-clear {
+    font-size: 12px
+}
+
+div.form fieldset div.field.tandc {
+    margin: 19px 0 0 0
+}
+
+html.layout-v2 body fieldset div.submit input {
+    width: 55%
+}
+
+html.layout-v2 body div#content .terms .qa-privacypolicy-link {
+    border-bottom-color: #666
+}
+
+.marketing,.partner {
+    max-width: 575px
+}
+
+body #content #main .container div.form div.field input.qa-password-textbox {
+    padding-right: 53px
+}
+
+html.layout-v2 body.register-page fieldset div.field.recaptcha {
+    margin: 0 auto 19px
+}
+
+html.layout-v2 body fieldset div.field span.field-validation-error {
+    z-index: 1
+}
+
+.container-checkbox {
+    width: 100%
+}
+
+.col-md-8 {
+    width: 66.666666666666666666666666666667%
+}
+
+.col-md-4 {
+    width: 33.33%
+}
+
+.col-md-6 {
+    width: 50%
+}
+
+.col-md-3 {
+    width: 25%
+}
+
+.col-xs-12 {
+    width: 100%
+}
+
+.col-md-3,.col-md-6,.col-xs-12 {
+    display: flex
+}
+
+.checkbox-label {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: .6px;
+    color: #2d2d2d;
+    font-family: futura-pt;
+    font-weight: 700;
+    padding-top: 3px
+}
+
+.wrapper-checkbox {
+    padding: 24px 40px 24px 40px;
+    width: 100%
+}
+
+.flex-wrapper {
+    flex-wrap: wrap
+}
+
+.flex-checkbox-wrapper {
+    justify-content: flex-end
+}
+
+.container-checkbox:nth-child(odd) {
+    margin-right: 90px
+}
+
+.container-checkbox {
+    position: relative;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    height: 24px;
+    max-width: 240px
+}
+
+.container-checkbox input {
+    cursor: pointer;
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: solid 1px #777
+}
+
+.container-checkbox input:checked~.checkmark {
+    background-color: #fff;
+    border: solid 1px #0770cf
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.container-checkbox input:checked~.checkmark:after {
+    display: block
+}
+
+.container-checkbox .checkmark:after {
+    left: 10px;
+    top: 1px;
+    width: 4px;
+    height: 16px;
+    border: solid #2d2d2d;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.container-all-checkbox {
+    margin-bottom: 16px
+}
+
+.close-modal:focus,.home:focus,.js-birthday select:focus,.modal-preference-button-open:focus,.privacy-info a:focus,.qa-create-account:focus,.qa-forgot-password:focus,.qa-hide:focus,.qa-join-web-app:focus,.qa-privacypolicy-link:focus,.qa-reveal:focus,.qa-sign-in-link:focus,.qa-tandc-link:focus,div.form fieldset div.field input:not([type=checkbox]):focus {
+    outline: 0;
+    box-shadow: inset 0 0 3px 1px #0770cf
+}
+
+html.layout-v2 body .actions-btn .info-link.reset-email-link:focus {
+    outline: 0;
+    box-shadow: 0 0 3px 1px #0770cf
+}
+
+html.layout-v2 body fieldset div.gender input.hidden-radio {
+    height: 0
+}
+
+.social-link:focus {
+    outline: 0;
+    box-shadow: 0 0 3px 1px #0770cf
+}
+
+a.home {
+    display: inline-block
+}
+
+.qa-sign-up-with-email:focus {
+    box-shadow: inset 0 0 3px 1px #0770cf;
+    border: 1px solid red
+}
+
+body:not(.mobile) .btn.two-btn {
+    float: left
+}
+
+body:not(.mobile) .btn.two-btn.facebook-us {
+    float: right
+}
+
+div.info {
+    padding: 0 6%;
+    margin: 43px 18px 18px
+}
+
+div.info.links {
+    margin-top: 50px
+}
+
+div.info.links h4+h4 {
+    margin-top: 20px
+}
+
+div.info.links p {
+    margin-top: 28px
+}
+
+div.info-centre {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow-y: visible
+}
+
+.existing-account div.info-centre .title {
+    margin-top: -3px
+}
+
+.existing-account div.info-centre p {
+    margin-top: 28px
+}
+
+.existing-account div.info-centre .options.one-button {
+    margin-bottom: 32px
+}
+
+div.info-centre h1,div.info-centre p {
+    margin: 24px auto 0
+}
+
+.register div.info-centre {
+    margin-bottom: 31px
+}
+
+.register div.info-centre h1.qa-use-email,.register div.info-centre p.qa-use-email,.signin-container div.info-centre h1.qa-use-email,.signin-container div.info-centre p.qa-use-email {
+    padding: 5px 0 0;
+    text-transform: uppercase;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px
+}
+
+.register div.info-centre.disabled .options-error-block,.signin-container div.info-centre.disabled .options-error-block {
+    width: 70%;
+    bottom: 70px;
+    left: 14.5%
+}
+
+.register div.info-centre.disabled .options-error-block.wide-open,.signin-container div.info-centre.disabled .options-error-block.wide-open {
+    display: block;
+    position: relative
+}
+
+.register div.info-centre .options.one-button,.signin-container div.info-centre .options.one-button {
+    margin-bottom: 32px
+}
+
+div.info-centre.disabled {
+    overflow-y: hidden
+}
+
+div.info-centre .title {
+    margin: 0 2.5% 0 2.5%;
+    max-width: 95%;
+    text-transform: none;
+    line-height: 33px;
+    font-size: 25px
+}
+
+div.info-centre .title.tick-title::before {
+    content: "";
+    width: 23px;
+    height: 22px;
+    background: url(../imgs/shape-checkmark.png) no-repeat;
+    background-size: 23px 22px;
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: none;
+    font-size: 25px;
+    line-height: 33px
+}
+
+div.info-centre .subtitle {
+    max-width: 67%;
+    padding-top: 0;
+    letter-spacing: .1px
+}
+
+div.info-centre .subtitle-container {
+    max-height: 0;
+    margin-top: 30px;
+    overflow: hidden
+}
+
+div.info-centre .subtitle-container .subtitle {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    height: auto;
+    background-color: #cce0eb
+}
+
+div.info-centre .subtitle-container[data-state=isExpanded] {
+    max-height: 300px
+}
+
+div.info-centre hr.hr-with-text {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #eee;
+    text-align: center;
+    margin: 30px auto 0 auto
+}
+
+div.info-centre div.hr-with-text {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    padding: 0 .5em;
+    background: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px
+}
+
+div.info-centre img {
+    display: inline-block;
+    padding: 0;
+    margin: 15px 0 0;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-clip: padding-box
+}
+
+div.info-centre .info-link {
+    padding: 20px 0 30px 0;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.248em
+}
+
+div.container.password-sent .info-link {
+    padding-top: 33px
+}
+
+.register-social.container .info {
+    margin-top: 50px
+}
+
+body.additional-details-page .register-social.container .info {
+    margin-top: 0;
+    margin-bottom: -20px;
+    padding-bottom: 0
+}
+
+body.mobile.additional-details-page .register-social.container .info {
+    margin-bottom: 15px
+}
+
+.options {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0 10px 20px
+}
+
+.options a,.options a:hover {
+    text-decoration: none
+}
+
+.options a.download,.options a.download:hover {
+    text-decoration: underline
+}
+
+.options .social-links-container {
+    margin: 0 auto;
+    height: 150px
+}
+
+.options .social-links-container .social-link {
+    float: left;
+    position: relative;
+    height: 50px;
+    max-width: 320px;
+    border: solid 2px #ddd;
+    color: #2d2d2d
+}
+
+div#content div.container .options:not(.disabled) .options .social-links-container .social-link:hover {
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.options .social-links-container .social-link .connect {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-opacity: .9;
+    opacity: .9
+}
+
+.options .social-links-container .social-link .connect .icon {
+    background-size: 18px;
+    background-position: center
+}
+
+.options .social-links-container .social-link .connect.facebook {
+    width: 100%;
+    height: 50px;
+    background-color: #fff
+}
+
+.options .social-links-container .social-link .connect.facebook .icon {
+    background-image: url(../imgs/flogo-rgb-hex-512.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options .social-links-container .social-link .connect.facebook .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options .social-links-container .social-link .connect.facebook .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options .social-links-container .social-link .connect.google {
+    width: 100%;
+    height: 50px;
+    background-color: #fff
+}
+
+.options .social-links-container .social-link .connect.google .icon {
+    background-image: url(../imgs/logo-googleg-48-dp.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options .social-links-container .social-link .connect.google .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options .social-links-container .social-link .connect.google .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options .social-links-container .social-link .connect.email {
+    width: 100%;
+    height: 50px;
+    background-color: #333
+}
+
+/*
+.options .social-links-container .social-link .connect.email .icon {
+    background-image: url("email icon here");
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+*/
+
+.options .social-links-container .social-link .connect.email .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options .social-links-container .social-link .connect.email .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options .social-links-container .social-link .connect.email .icon {
+    background-position: center
+}
+
+.options .social-links-container .social-link .connect.email .text {
+    padding: 0;
+    display: block;
+    left: 5px
+}
+
+.options .social-links-container .social-link .connect.twitter {
+    width: 100%;
+    height: 50px;
+    background-color: #fff
+}
+
+.options .social-links-container .social-link .connect.twitter .icon {
+    background-image: url(../imgs/twitter-logo-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options .social-links-container .social-link .connect.twitter .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options .social-links-container .social-link .connect.twitter .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options .social-links-container .social-link .connect.apple {
+    width: 100%;
+    height: 50px;
+    background-color: #fff
+}
+
+.options .social-links-container .social-link .connect.apple .icon {
+    background-image: url(../imgs/apple-logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options .social-links-container .social-link .connect.apple .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options .social-links-container .social-link .connect.apple .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+div.container .options .social-links-container .social-link .connect:hover {
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.options.four-buttons-mobile .social-links-container {
+    min-width: 352px
+}
+
+.options.four-buttons {
+    height: 120px
+}
+
+.options.four-buttons .social-links-container {
+    min-width: 264px
+}
+
+.options.four-buttons .social-links-container li.social-register {
+    width: 36%
+}
+
+.options.four-buttons .social-links-container .social-link {
+    width: 100%
+}
+
+.options.three-buttons {
+    height: 63px
+}
+
+.options.three-buttons .social-links-container {
+    min-width: 264px;
+    height: 50px
+}
+
+.options.three-buttons .social-links-container li.social-register {
+    width: 31.3%
+}
+
+.options.three-buttons .social-links-container .social-link {
+    width: 100%
+}
+
+.options.two-buttons {
+    max-width: 19%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-width: 120px;
+    width: 120px
+}
+
+.options.two-buttons .connect {
+    margin-top: 10px;
+    float: left
+}
+
+.options.two-buttons .connect.facebook {
+    width: 100%;
+    height: 50px;
+    background-color: #2d609b
+}
+
+.options.two-buttons .connect.facebook .icon {
+    background-image: url(../imgs/facebook_logo_images.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options.two-buttons .connect.facebook .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options.two-buttons .connect.facebook .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options.two-buttons .connect.google {
+    width: 100%;
+    height: 50px;
+    background-color: #dc4e40;
+    margin: 0 8%
+}
+
+.options.two-buttons .connect.google .icon {
+    background-image: url(../imgs/google_image_download.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 7px
+}
+
+.options.two-buttons .connect.google .text {
+    padding: 0;
+    position: relative;
+    display: block
+}
+
+.options.two-buttons .connect.google .text span {
+    color: #fff;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px
+}
+
+.options.one-button {
+    height: 58px;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.options.one-button a {
+    width: 100%;
+    display: inline-block
+}
+
+.options.one-button .social-links-container {
+    min-width: 100%;
+    height: 100%
+}
+
+.options.one-button .social-links-container .social-link {
+    width: 100%;
+    height: 50px;
+    float: none
+}
+
+.options.one-button .social-links-container .social-link .connect {
+    margin: 0 auto;
+    float: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    width: 100%;
+    height: 50px
+}
+
+div.container .options.one-button .social-links-container .social-link .connect:hover {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+.options .options-error-block {
+    display: none;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    bottom: 75px
+}
+
+.options .options-error-block .options-error {
+    background: #fdf0ce;
+    color: #222;
+    padding: 17px;
+    max-width: 59%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: center
+}
+
+.options .options-error-block .options-error p {
+    font-size: 12px;
+    color: #222
+}
+
+.options .options-error-block .options-error h5 {
+    font-size: 12px;
+    color: #222;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 0
+}
+
+.options .register-options-error-block {
+    margin-bottom: 53px;
+    font-size: 18px
+}
+
+.options .register-options-error-block .options-error {
+    background: #fdf0ce;
+    color: #222;
+    width: 90%;
+    max-width: 90%;
+    padding: 20px 5%
+}
+
+.options .register-options-error-block .options-error h5 {
+    color: #222;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px
+}
+
+.options .register-options-error-block .options-error p {
+    color: #222;
+    margin: 0!important;
+    font-size: 18px
+}
+
+.options.disabled {
+    position: relative
+}
+
+.options.disabled .social-links-container .social-link .connect {
+    opacity: .5
+}
+
+.options.disabled .social-links-container .social-link .connect:hover {
+    opacity: .5
+}
+
+.options .assurance {
+    padding-top: 5px
+}
+
+.options .assurance span {
+    font-size: .897em;
+    font-family: Arial,sans-serif;
+    font-weight: 200;
+    color: #767676;
+    text-align: center
+}
+
+.signin-link-spacer {
+    margin: 0 6%;
+    width: 88%;
+    height: 1px;
+    background-color: #eee;
+    clear: both
+}
+
+.signin,.use-voucher {
+    padding: 48px 0 50px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px
+}
+
+.privacy-info {
+    max-width: 63%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px 0 0 0
+}
+
+.use-voucher {
+    padding-bottom: 0;
+    margin-bottom: -31px
+}
+
+.use-voucher h2 {
+    padding: 0 5% 0
+}
+
+li.social-register {
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    margin-right: 1.3%
+}
+
+#social-register-list,#social-signin-list {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    margin-top: 0
+}
+
+.options .social-links-container .social-link .connect.apple .text span,.options .social-links-container .social-link .connect.facebook .text span,.options .social-links-container .social-link .connect.google .text span,.options .social-links-container .social-link .connect.twitter .text span {
+    color: #2d2d2d;
+    letter-spacing: .6px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset
+}
+
+::-ms-clear,::-ms-reveal {
+    display: none
+}
+
+body[data-state=isExpanded] div.form {
+    max-height: 2000px
+}
+
+body[data-state=isExpanded] .container.register .options.one-button {
+    display: none
+}
+
+.tran1 {
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    animation-fill-mode: backwards
+}
+
+.tran2 {
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s
+}
+
+div.form {
+    margin: 50px auto 0;
+    padding: 0 6% 0 6%;
+    width: 88%;
+    border: none
+}
+
+/*
+div.form hr.form-header {
+    border: none;
+    outline: 0;
+    display: block;
+    background: url("shadow bar") no-repeat;
+    clear: both;
+    display: inline-block;
+    height: 7px;
+    margin: 10px auto;
+    width: 656px
+}
+
+*/
+
+div.form form {
+    padding-top: 15px
+}
+
+div.form .form-title {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    text-transform: uppercase;
+    line-height: 1em
+}
+
+div.form .form-subtitle {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: .975em;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    text-align: center;
+    margin: 0 0 20px 0
+}
+
+div.form .title {
+    margin-bottom: 30px
+}
+
+div.form .error-block,div.form .success-block {
+    background-color: #fae7ec;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px
+}
+
+div.form .error-block h5,div.form .success-block h5 {
+    color: #222;
+    font-size: 12px
+}
+
+div.form .error-block p,div.form .error-block span,div.form .error-block ul,div.form .success-block p,div.form .success-block span,div.form .success-block ul {
+    color: #222;
+    font-size: .975em
+}
+
+div.form .error-block ul,div.form .success-block ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style-position: inside
+}
+
+div.form .error-block h5 {
+    color: red
+}
+
+div.form .success-block {
+    background-color: #cceedf
+}
+
+div.form fieldset {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    padding-bottom: 50px
+}
+
+div.form fieldset .checkbox-container {
+    float: left;
+    margin: 4px 0 0
+}
+
+div.form fieldset .checkbox-container .field {
+    margin: 0 0 19px
+}
+
+div.form fieldset .checkbox-container .field:last-child {
+    margin: 0
+}
+
+div.form fieldset div.field {
+    width: 57%;
+    margin: 0 auto 19px;
+    text-align: left;
+    position: relative;
+    float: left;
+    padding: 0 22%
+}
+
+div.form fieldset div.field.before-spacer {
+    margin-bottom: 0
+}
+
+div.form fieldset div.field.full-width {
+    width: 100%;
+    margin: 5px 0
+}
+
+div.form fieldset div.field.field.hr {
+    border-bottom: 1px solid #eee;
+    height: 1px
+}
+
+div.form fieldset div.field div.input-wrapper {
+    position: relative;
+    float: left;
+    width: 100%
+}
+
+div.form fieldset div.field label {
+    width: 100%;
+    margin: 0 3% 11px 0;
+    min-width: 20%;
+    font-family: Tahoma,Geneva,sans-serif;
+    float: left;
+    clear: both;
+    color: #2d2d2d
+}
+
+div.form fieldset div.field label.checkbox,div.form fieldset div.field label.radio {
+    width: auto;
+    margin-right: 0;
+    margin-left: 2%;
+    text-align: left;
+    min-width: 0;
+    margin-right: 5%
+}
+
+div.form fieldset div.field label.checkbox {
+    float: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px
+}
+
+div.form fieldset div.field label a {
+    text-decoration: underline;
+    color: #222
+}
+
+div.form fieldset div.field label span.optional {
+    display: none;
+    color: #767676;
+    margin-left: 5px
+}
+
+div.form fieldset div.field input:not([type=checkbox]),div.form fieldset div.field select {
+    width: 100%;
+    float: left;
+    height: 45px;
+    outline: 0;
+    border: 1px solid #767676;
+    font-size: .975em
+}
+
+div.form fieldset div.field input:not([type=checkbox]):focus,div.form fieldset div.field select:focus {
+    border-color: #2d2d2d
+}
+
+div.form fieldset div.field input.checkbox:not([type=checkbox]),div.form fieldset div.field input:not([type=checkbox]).radio,div.form fieldset div.field select.checkbox:not([type=checkbox]),div.form fieldset div.field select.radio {
+    width: auto;
+    margin-top: 4px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).checkbox,div.form fieldset div.field select.checkbox {
+    margin-bottom: 0;
+    float: left;
+    height: auto;
+    border: none
+}
+
+div.form fieldset div.field input:not([type=checkbox]).input-validation-error,div.form fieldset div.field select.input-validation-error {
+    border: 2px solid #d01345
+}
+
+div.form fieldset div.field input:not([type=checkbox]).valid~span.tick,div.form fieldset div.field select.valid~span.tick {
+    background: url(../imgs/shape-checkmark.png) no-repeat;
+    background-size: 17px 16px;
+    display: block;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 13px;
+    right: -25px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).valid~span.field-message,div.form fieldset div.field select.valid~span.field-message {
+    display: block
+}
+
+div.form fieldset div.field input:not([type=checkbox])#BirthYear~.tick,div.form fieldset div.field select#BirthYear~.tick {
+    right: 115px;
+    top: 45px
+}
+
+div.form fieldset div.field input:not([type=checkbox])#BirthYear~.field-message,div.form fieldset div.field select#BirthYear~.field-message {
+    right: 4px;
+    width: 105px;
+    top: 46px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).upperCase,div.form fieldset div.field select.upperCase {
+    text-transform: uppercase
+}
+
+div.form fieldset div.field input:not([type=checkbox])::-webkit-input-placeholder,div.form fieldset div.field select::-webkit-input-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox]):-moz-placeholder,div.form fieldset div.field select:-moz-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox])::-moz-placeholder,div.form fieldset div.field select::-moz-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox]):-ms-input-placeholder,div.form fieldset div.field select:-ms-input-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field span.tick {
+    display: none
+}
+
+div.form fieldset div.field select~span.field-message {
+    position: absolute;
+    top: 32px;
+    right: -115px;
+    width: 85px;
+    max-width: 25%;
+    color: #767676;
+    display: none;
+    font-size: 12px;
+    line-height: 14px
+}
+
+div.form fieldset div.field input {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+div.form fieldset div.field select~span.field-message-format,div.form fieldset div.field select~span.field-message-result {
+    display: none
+}
+
+div.form fieldset div.field a {
+    color: #767676;
+    text-decoration: none
+}
+
+div.form fieldset div.field span.field-validation-error {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    display: block;
+    background-color: #fae7ec;
+    border: 2px solid #ce1948;
+    padding: 0;
+    z-index: 10;
+    max-width: 500px;
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    bottom: 53px;
+    box-sizing: border-box
+}
+
+div.form fieldset div.field span.field-validation-error span {
+    background-color: #fae7ec;
+    display: block;
+    z-index: 10;
+    padding: 5px 10px
+}
+
+div.form fieldset div.field span.field-validation-error.subfield-validation {
+    bottom: 95px;
+    left: 21.4%;
+    width: 55.4%
+}
+
+div.form fieldset div.field span.field-validation-error::after {
+    position: absolute;
+    left: 10px;
+    bottom: -15px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #ce1948;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 1
+}
+
+div.form fieldset div.field span.field-validation-error::before {
+    position: absolute;
+    left: 10px;
+    bottom: -12px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #fae7ec;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 2
+}
+
+div.form fieldset div.field span.hint {
+    clear: both;
+    padding-top: 6px;
+    color: #767676;
+    display: block;
+    font-size: 12px
+}
+
+div.form fieldset div.field span.hide,div.form fieldset div.field span.reveal {
+    float: right;
+    margin-top: -30px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #767676;
+    text-decoration: underline
+}
+
+div.form fieldset div.field span.hide:hover,div.form fieldset div.field span.reveal:hover {
+    text-decoration: none
+}
+
+/*
+div.form fieldset div.field select.valid~span.tick,div.form fieldset div.field span.tick {
+    width: 12px;
+    height: 12px;
+    background: url("check box tick here") no-repeat;
+    background-size: 12px;
+    vertical-align: baseline
+}
+*/
+
+div.form fieldset div.field div.subfield {
+    width: 21%;
+    float: left;
+    margin-right: 4%
+}
+
+div.form fieldset div.field div.subfield.long-subfield {
+    width: 50%
+}
+
+div.form fieldset div.field div.subfield.last-subfield {
+    margin-right: 0
+}
+
+div.form fieldset div.field div.subfield input.valid~span.tick {
+    top: 30px
+}
+
+div.form fieldset div.field div.subfield label.checkbox,div.form fieldset div.field div.subfield label.radio {
+    margin-left: 5%
+}
+
+div.form fieldset div.field.nomargin span.field-validation-error {
+    margin-left: 0
+}
+
+div.form fieldset div.field div.tickbox-container {
+    width: 48%;
+    border: 1px solid #767676;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    min-height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer
+}
+
+div.form fieldset div.field div.tickbox-container label {
+    font-weight: 400;
+    cursor: pointer;
+    float: none;
+    word-wrap: break-word;
+    color: #767676
+}
+
+div.form fieldset div.field div.tickbox-container.selected {
+    border: 2px solid #2d2d2d;
+    padding: 9px 0
+}
+
+div.form fieldset div.field div.tickbox-container.selected label {
+    color: #2d2d2d
+}
+
+div.form fieldset div.field.focused label {
+    color: #2d2d2d
+}
+
+div.form fieldset div.field.focused input,div.form fieldset div.field.focused select {
+    border-color: #2d2d2d
+}
+
+div.form fieldset div.field.switch-container {
+    width: 100%;
+    margin: 0 0 -1px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee
+}
+
+div.form fieldset div.field.switch-container label {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+    width: 35%
+}
+
+div.form fieldset div.field.switch-container .switch {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 0 5px 0 #222;
+    -moz-box-shadow: inset 0 0 5px 0 #222;
+    box-shadow: inset 0 0 5px 0 #222;
+    background: #d6d6d6;
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+    position: relative
+}
+
+div.form fieldset div.field.switch-container .switch input {
+    display: none
+}
+
+div.form fieldset div.field.switch-container .switch::after {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #fff;
+    margin: 3px;
+    height: 32px;
+    content: "";
+    display: block;
+    width: 45%;
+    border: 1px solid #767676
+}
+
+/*
+div.form fieldset div.field.switch-container .switch::before {
+    content: "";
+    position: absolute;
+    background: url("slider off image") no-repeat;
+    background-size: 13px;
+    width: 13px;
+    height: 13px;
+    top: 20px;
+    margin-top: -6px;
+    right: 25%;
+    margin-right: -6px
+}
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]::before {
+    background: url("slider on image") no-repeat;
+    background-size: 18px 17px;
+    width: 18px;
+    height: 17px;
+    margin-top: -8px;
+    left: 25%;
+    margin-left: -9px;
+    right: auto;
+    margin-right: 0
+}
+
+*/
+
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]::after {
+    border: none;
+    height: 34px;
+    float: right
+}
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]~.checkbox-switch-identifier {
+    display: inline-block
+}
+
+div.form fieldset div.field.switch-container .switch.facebook::after {
+    background: #fff url(../imgs/facebook_logo_images.png) no-repeat;
+    background-size: 30px;
+    background-position: 10px 5px
+}
+
+div.form fieldset div.field.switch-container .switch.facebook[data-state=isChecked] {
+    background: #2d609b
+}
+
+div.form fieldset div.field.switch-container .switch.facebook[data-state=isChecked]::after {
+    background-image: url(../imgs/facebook_logo_images.png)
+}
+
+div.form fieldset div.field.switch-container .switch.google::after {
+    background: #fff url(../imgs/google_image_download.png) no-repeat;
+    background-size: 25px;
+    background-position: center
+}
+
+div.form fieldset div.field.switch-container .switch.google[data-state=isChecked] {
+    background: #dc4e40
+}
+
+div.form fieldset div.field.switch-container .switch.google[data-state=isChecked]::after {
+    background-image: url(../imgs/google_image_download.png)
+}
+
+div.form fieldset div.field.switch-container .switch.twitter::after {
+    background: #fff url(../imgs/twitter_logo_download.png) no-repeat;
+    background-size: 25px;
+    background-position: center
+}
+
+div.form fieldset div.field.switch-container .switch.twitter[data-state=isChecked] {
+    background: #00c3f3
+}
+
+div.form fieldset div.field.switch-container .switch.twitter[data-state=isChecked]::after {
+    background-image: url(../imgs/twitter_logo_download.png)
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error {
+    display: none;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    bottom: 70px
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content {
+    background: #fdf0ce;
+    color: #222;
+    padding: 17px 22px 17px 17px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: left;
+    border: #ede1c0 solid 1px;
+    position: relative
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content p {
+    font-size: 12px;
+    color: #222;
+    margin: 0;
+    padding: 0
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content p a {
+    text-decoration: underline;
+    color: #222
+}
+
+/*
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content a.close-error {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    text-indent: -999px;
+    text-align: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url( "close icon here") no-repeat;
+    background-size: 10px
+}
+
+*/
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #fdf0ce transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -14px;
+    left: 44%
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #ede1c0 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -15px;
+    left: 44%
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-identifier {
+    display: none;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-transform: uppercase
+}
+
+div.form fieldset div.submit {
+    margin: 15px 0 15px;
+    text-align: center
+}
+
+div.form fieldset div.submit input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Tahoma,Geneva,sans-serif;
+    white-space: normal;
+    letter-spacing: 1px
+}
+
+div.form fieldset div.submit input:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+div.form fieldset div.submit input[disabled] {
+    background-color: #aaa
+}
+
+div.form fieldset div.submit a {
+    float: right
+}
+
+div.form fieldset div.forgotten-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px
+}
+
+div.form fieldset div.form-field-spacer {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin: 39px 0 20px 0;
+    clear: both
+}
+
+div.form fieldset div.select-list {
+    height: 45px;
+    overflow: hidden;
+    background: url(../imgs/sortdown_new.png) no-repeat right;
+    background-color: #fff;
+    background-size: 20px 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+div.form fieldset div.select-list select {
+    background: 0 0;
+    padding: 7px 10px;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-indent: .01px;
+    text-overflow: ""
+}
+
+div.form fieldset div.select-list select::-ms-expand {
+    display: none
+}
+
+div.form.existing-signin {
+    margin-top: 20px
+}
+
+div.form.existing-signin form {
+    padding-top: 0
+}
+
+div.form.existing-signin form fieldset {
+    padding-bottom: 31px
+}
+
+div.form-login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px
+}
+
+div.form-login form {
+    padding-top: 0
+}
+
+div.form-login form fieldset div:first-child+div.field {
+    margin-top: 0
+}
+
+div.form-login>h4 {
+    margin-bottom: 15px
+}
+
+div.form-account-details {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.form-account-details form {
+    padding-top: 20px
+}
+
+div.form-forgotten-password {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px
+}
+
+div.form-forgotten-password,div.social-register {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.form-forgotten-password form,div.social-register form {
+    padding-top: 0
+}
+
+div.form-forgotten-password form .form-field-spacer+.field:not(.before-spacer),div.social-register form .form-field-spacer+.field:not(.before-spacer) {
+    margin-bottom: 20px
+}
+
+div.form.social-register {
+    margin-top: 45px
+}
+
+div.form.social-register fieldset .form-field-spacer {
+    float: left
+}
+
+div.fb-widget {
+    width: 100%;
+    text-align: center
+}
+
+div.fb-widget .fb-facepile {
+    margin: 0 auto
+}
+
+div.no-addresses {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.register div.form {
+    max-height: 0;
+    overflow: hidden
+}
+
+.register div.form form {
+    border-top: 1px solid #eee;
+    position: relative;
+    padding-top: 50px
+}
+
+.register div.form form div.form-field-spacer {
+    margin-top: 35px
+}
+
+@-moz-document url-prefix() {
+    #content .form fieldset div.select-list {
+        background-image: none
+    }
+}
+
+div.g-recaptcha div {
+    margin: auto
+}
+
+.grecaptcha-badge {
+    z-index: 1
+}
+
+div.form fieldset div.field legend span.optional {
+    display: none;
+    color: #767676;
+    margin-left: 5px
+}
+
+div.form fieldset div.field legend {
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #767676;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.7
+}
+
+div.form fieldset div.field legend:after {
+    content: ":";
+    width: auto;
+    color: #767676
+}
+
+.terms {
+    padding: 10px 2% 0 2%;
+    font-size: .897em;
+    color: #666;
+    text-align: center
+}
+
+.terms a {
+    color: #666
+}
+
+.terms label {
+    font-size: 12px;
+    line-height: 14px
+}
+
+.button-link {
+    padding: 20px 0 30px 0
+}
+
+.button-link a {
+    background-color: #2d2d2d;
+    color: #fff!important;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #3b3b3b;
+    background: -moz-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#676767),color-stop(100%,#3b3b3b));
+    background: -webkit-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -o-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: -ms-linear-gradient(top,#676767 0,#3b3b3b 100%);
+    background: linear-gradient(to bottom,#676767 0,#3b3b3b 100%);
+    border: 0;
+    min-width: 30%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block
+}
+
+.button-link a.disabled {
+    background: #9e9e9e;
+    background: -moz-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#b1b1b1),color-stop(100%,#9e9e9e));
+    background: -webkit-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -o-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: -ms-linear-gradient(top,#b1b1b1 0,#9e9e9e 100%);
+    background: linear-gradient(to bottom,#b1b1b1 0,#9e9e9e 100%)
+}
+
+.breadcrumb {
+    margin: 5px auto;
+    padding: 0;
+    width: 90%
+}
+
+.breadcrumb a {
+    font-weight: 700;
+    text-decoration: none;
+    display: inline;
+    margin-right: 10px
+}
+
+.strong-text {
+    font-weight: 700;
+    font-size: 12px
+}
+
+.card-types {
+    margin-bottom: 50px
+}
+
+.card-types h3 {
+    font-size: 12px;
+    color: #222;
+    margin-bottom: 10px
+}
+
+.card-types img {
+    padding-left: 4px
+}
+
+.card-types ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%
+}
+
+.card-types ul li {
+    display: inline-block;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 51px;
+    height: 32px;
+    text-align: left;
+    padding-bottom: 2px
+}
+
+#page-banner {
+    position: relative;
+    background-color: #d7f9da;
+    max-width: 720px;
+    margin: 0 auto 0 auto;
+    padding: 10px 33px 10px 10px;
+    text-align: center;
+    font-size: 13px;
+    font-family: Tahoma,Geneva,sans-serif;
+    color: #222;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+#page-banner .banner-copy {
+    padding-left: 20px;
+    background: url(../imgs/shape-checkmark.png) no-repeat;
+    background-size: 13px;
+    background-position: left 2px;
+    min-height: 15px;
+    display: inline-block
+}
+
+#page-banner a.close-banner {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    overflow: hidden;
+    text-indent: -999px;
+    text-align: left;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url( "close icon here") no-repeat;
+    background-size: 13px
+}
+
+/* ======= start's here ACCOUNT PAGE ==========
+.account-page #content {
+    width: 720px;
+    max-width: none;
+    border: 1px solid #eee;
+    position: relative;
+    margin: 28px auto
+}
+
+.account-page #content div#action-links {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: -25px
+}
+
+.account-page #content div#action-links a {
+    display: inline;
+    margin-left: 10px
+}
+
+.account-page #content #header {
+    padding-top: 30px;
+    width: 656px;
+    margin: 0 auto
+}
+
+.account-page #content h1.title {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    margin: 0 170px;
+    font-size: 22px
+}
+
+.account-page #content .breadcrumb {
+    width: 656px;
+    margin: 5px auto 0 auto
+}
+
+.account-page #content .breadcrumb .breadcrumb-right {
+    float: right
+}
+
+.account-page #content .progress ol {
+    display: inline;
+    float: left;
+    margin: 0 39px 3px 39px;
+    padding: 0;
+    width: 640px
+}
+
+.account-page #content .progress ol li {
+    list-style: none
+}
+
+.account-page #content .progress ol li.step {
+    background: url(/Content/images/steps-line.gif) repeat-x;
+    color: #bbb;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: .975em;
+    float: left;
+    text-align: left;
+    width: 128px
+}
+
+.account-page #content .progress ol li.step span {
+    display: block
+}
+
+.account-page #content .progress ol li.step span.number {
+    background: url(  );
+    height: 20px;
+    margin: 0 0 5px 54px;
+    text-indent: -9999px;
+    width: 20px
+}
+
+.account-page #content .progress ol li.step span.step-name {
+    text-align: center;
+    width: 100%
+}
+
+.account-page #content .progress ol li.step.selected {
+    color: #000;
+    text-decoration: underline
+}
+
+.account-page #content .progress ol li#about-you .number {
+    background-position: 0 -20px
+}
+
+.account-page #content .progress ol li#about-you.selected .number {
+    background-position: 0 0
+}
+
+.account-page #content .progress ol li#billing .number {
+    background-position: -20px 20px
+}
+
+.account-page #content .progress ol li#billing.selected .number {
+    background-position: -20px 0
+}
+
+.account-page #content .progress ol li#delivery .number {
+    background-position: -40px -20px
+}
+
+.account-page #content .progress ol li#delivery.selected .number {
+    background-position: -40px 0
+}
+
+.account-page #content .progress ol li#payment .number {
+    background-position: -60px -20px
+}
+
+.account-page #content .progress ol li#payment.selected .number {
+    background-position: -60px 0
+}
+
+.account-page #content .progress ol li#confirm-and-pay .number {
+    background-position: -80px -20px
+}
+
+.account-page #content .progress ol li#confirm-and-pay.selected .number {
+    background-position: -80px 0
+}
+
+.account-page #content hr.account-header {
+    border: none;
+    outline: 0;
+    display: block;
+    background: url(  ) no-repeat;
+    clear: both;
+    display: inline-block;
+    height: 7px;
+    margin: 10px auto;
+    width: 656px
+}
+
+.account-page #content div.validation-summary-errors {
+    background: #fee;
+    border: 1px solid #eaa3a3;
+    clear: both;
+    display: block;
+    padding: 12px 17px;
+    margin-bottom: 24px
+}
+
+.account-page #content div.validation-summary-errors>span {
+    font-weight: 700;
+    font-family: Georgia,Times,"Times New Roman",serif
+}
+
+.account-page #content div.validation-summary-errors ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style-position: inside
+}
+
+.account-page #content div.form {
+    width: 656px;
+    padding: 0;
+    margin: 0 auto
+}
+
+.account-page #content div.form.form-account-details div:last-child.address-container {
+    border-bottom: 0
+}
+
+.account-page #content div.form.form-account-details form fieldset .field .subfield.last-subfield.select-list select#BirthYear {
+    padding-left: 2px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) {
+    width: auto;
+    text-align: left;
+    position: relative;
+    margin: 0 0 24px 0;
+    float: none;
+    padding: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .input-wrapper,.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield,.account-page #content div.form form fieldset div.field:not(.switch-container) input,.account-page #content div.form form fieldset div.field:not(.switch-container) label,.account-page #content div.form form fieldset div.field:not(.switch-container) select {
+    float: none;
+    vertical-align: middle;
+    width: auto;
+    min-width: 0;
+    max-width: none
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .input-wrapper .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) .input-wrapper .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) input .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) input .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) label .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) label .reveal,.account-page #content div.form form fieldset div.field:not(.switch-container) select .hide,.account-page #content div.form form fieldset div.field:not(.switch-container) select .reveal {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    margin: 0;
+    float: none
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .input-wrapper.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) input.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) label.full-width,.account-page #content div.form form fieldset div.field:not(.switch-container) select.full-width {
+    width: 299px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .input-wrapper,.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield,.account-page #content div.form form fieldset div.field:not(.switch-container) label,.account-page #content div.form form fieldset div.field:not(.switch-container) select {
+    display: inline-block
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).additional-info {
+    background-color: #f8f8f8;
+    border: 1px solid #08f;
+    color: #444;
+    font-size: 12px;
+    margin: -20px 0 10px 184px;
+    overflow: hidden;
+    width: 298px!important
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).additional-info .additional-info-wrapper {
+    margin: 3px 0 3px 4px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).additional-info.top-field {
+    margin-top: -10px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .select-list {
+    height: 22px;
+    padding: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .hint {
+    display: inline-block;
+    margin-left: 10px;
+    width: 150px;
+    vertical-align: middle;
+    padding-top: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) label {
+    text-align: right;
+    width: 170px;
+    margin: 0 10px 0 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) input,.account-page #content div.form form fieldset div.field:not(.switch-container) select {
+    padding: 8px 5px;
+    width: 300px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) input:focus,.account-page #content div.form form fieldset div.field:not(.switch-container) select:focus {
+    border-color: #767676;
+    border-width: 1px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) #lookup-address {
+    width: auto;
+    padding: 8px;
+    min-width: 150px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) select {
+    width: 298px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield {
+    width: 60px;
+    margin-right: 10px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield.last-subfield {
+    margin-right: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield input,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield label,.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield select {
+    display: inline;
+    width: 100%;
+    margin: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .subfield.long-subfield {
+    width: 150px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox {
+    width: auto;
+    margin-right: 10px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox input,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox label,.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox select {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox label.checkbox {
+    display: inline-block;
+    padding: 0 0 0 30px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox input[type=checkbox].checkbox {
+    display: none
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container) .single-checkbox input[type=checkbox].checkbox~label {
+    max-width: 113px;
+    display: inline-block;
+    padding: 0 0 0 30px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).checkbox-group .hint {
+    width: auto;
+    max-width: 150px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).narrow-field input,.account-page #content div.form form fieldset div.field:not(.switch-container).narrow-field select {
+    padding: 0 5px;
+    height: 22px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).full-width {
+    margin-left: 183px
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).full-width input.checkbox {
+    width: auto;
+    padding: 0;
+    margin: 0
+}
+
+.account-page #content div.form form fieldset div.field:not(.switch-container).full-width label {
+    font-weight: 700;
+    text-align: left
+}
+
+.account-page #content div.form form fieldset #postalcode-notfound {
+    display: none;
+    background: #f4f4f4;
+    clear: both;
+    padding: 20px 25px;
+    text-align: left;
+    width: auto;
+    margin-bottom: 20px
+}
+
+.account-page #content div.form form fieldset #postalcode-notfound .line1 {
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.account-page #content div.form form fieldset select#address-list {
+    height: auto;
+    margin: 0;
+    width: 317px
+}
+
+.account-page #content div.form form fieldset div.address-list-container {
+    overflow-x: auto;
+    overflow-y: auto
+}
+
+.account-page #content div.form form fieldset div.expand-address {
+    margin: -20px 0 24px 183px;
+    font-size: .897em;
+    color: #666
+}
+
+.account-page #content div.form form fieldset div.expand-address a {
+    color: #666;
+    text-decoration: underline
+}
+
+.account-page #content div.form form fieldset div.expand-address input {
+    float: none;
+    display: block;
+    margin-top: 20px;
+    padding: 5px 15px;
+    width: auto
+}
+
+.account-page #content div.form form fieldset div.submit {
+    text-align: right
+}
+
+.account-page #content div.form form fieldset div.submit p {
+    display: inline-block;
+    color: #767676;
+    font-size: 12px;
+    margin-right: 10px
+}
+
+.account-page #content div.form form fieldset div.submit input {
+    display: inline-block
+}
+
+.account-page #content div.form div.address-container {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px
+}
+
+.account-page #content div.form div.address-container .address,.account-page #content div.form div.address-container .address-options,.account-page #content div.form div.address-container .contact-numbers {
+    float: left;
+    width: 30%
+}
+
+.account-page #content div.form div.address-container .address p,.account-page #content div.form div.address-container .address ul,.account-page #content div.form div.address-container .address-options p,.account-page #content div.form div.address-container .address-options ul,.account-page #content div.form div.address-container .contact-numbers p,.account-page #content div.form div.address-container .contact-numbers ul {
+    color: #222;
+    font-size: .975em
+}
+
+.account-page #content div.form div.address-container .address ul,.account-page #content div.form div.address-container .address-options ul,.account-page #content div.form div.address-container .contact-numbers ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.account-page #content div.form div.address-container .address ul li,.account-page #content div.form div.address-container .address-options ul li,.account-page #content div.form div.address-container .contact-numbers ul li {
+    word-wrap: break-word
+}
+
+.account-page #content div.form div.address-container .address .address-checkbox input[type=checkbox],.account-page #content div.form div.address-container .address-options .address-checkbox input[type=checkbox],.account-page #content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox] {
+    margin-bottom: 10px;
+    display: none
+}
+
+.account-page #content div.form div.address-container .address .address-checkbox input[type=checkbox]~label,.account-page #content div.form div.address-container .address-options .address-checkbox input[type=checkbox]~label,.account-page #content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox]~label {
+    display: inline-block;
+    background-image: url( "input checkbox initial");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    margin: 0
+}
+
+.account-page #content div.form div.address-container .address .address-checkbox input[type=checkbox]:checked~label,.account-page #content div.form div.address-container .address-options .address-checkbox input[type=checkbox]:checked~label,.account-page #content div.form div.address-container .contact-numbers .address-checkbox input[type=checkbox]:checked~label {
+    background-image: url("input checkbox checked")
+}
+
+.account-page #content div.form div.address-container .address .address-checkbox label.disabled,.account-page #content div.form div.address-container .address-options .address-checkbox label.disabled,.account-page #content div.form div.address-container .contact-numbers .address-checkbox label.disabled {
+    color: #aaa
+}
+
+.account-page #content div.form div.address-container .contact-numbers {
+    width: 40%
+}
+
+.account-page #content div.form div.address-container .submit {
+    margin-top: 20px
+}
+
+.account-page #content div.form div.address-container .submit .buttons {
+    float: right
+}
+
+.account-page #content div.form div.address-container .submit .buttons input[type=button],.account-page #content div.form div.address-container .submit .buttons input[type=submit] {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Tahoma,Geneva,sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+    min-width: 100px;
+    margin-bottom: 5px;
+    white-space: normal;
+    float: left;
+    display: inline-block
+}
+
+.account-page #content div.form div.address-container .submit .buttons input[type=button]:hover,.account-page #content div.form div.address-container .submit .buttons input[type=submit]:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+.account-page #content div.form div.address-container .submit .buttons input[type=button][disabled],.account-page #content div.form div.address-container .submit .buttons input[type=submit][disabled] {
+    background-color: #aaa
+}
+
+.account-page #content div.form div.address-container .submit .buttons input[type=button] {
+    background: #dbdbdb;
+    color: #222
+}
+
+.account-page #content div.form div.address-container .submit .buttons input[type=submit] {
+    margin-right: 5px
+}
+
+.account-page #content div.form .qa-change-notifications-btn,.account-page #content div.form .qa-change-password-btn {
+    line-height: 36px;
+    float: right
+}
+
+.account-page #content div.form .qa-change-notifications-btn a,.account-page #content div.form .qa-change-password-btn a {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #dbdbdb;
+    color: #2d2d2d;
+    border: 0;
+    height: 30px;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Tahoma,Geneva,sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+    display: inline-block;
+    white-space: normal;
+    min-width: 90px;
+    float: left;
+    height: 36px;
+    padding: 0 10px
+}
+
+.account-page #content div.form .qa-change-notifications-btn a:hover,.account-page #content div.form .qa-change-password-btn a:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+.account-page #content div.form .qa-change-notifications-btn a[disabled],.account-page #content div.form .qa-change-password-btn a[disabled] {
+    background-color: #aaa
+}
+
+.account-page #content div.form .password-placeholder {
+    line-height: 44px;
+    height: 36px;
+    float: left;
+    letter-spacing: 3px
+}
+
+.account-page #content div.form .preferences-placeholder {
+    line-height: 44px;
+    float: left
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container):first-of-type {
+    padding-top: 10px
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container).checkbox-group {
+    text-align: center
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) div.input-wrapper {
+    margin: 0 auto
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) input.checkbox {
+    display: none
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) label:not(.checkbox) {
+    text-align: center;
+    font-size: 16px;
+    color: #2d2d2d;
+    padding-bottom: 5px;
+    width: 100%
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) label.checkbox {
+    text-transform: initial;
+    max-width: none;
+    display: block;
+    padding: 0;
+    font-size: 15px;
+    color: #2d2d2d;
+    padding: 15px 0;
+    position: relative
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) input {
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) input[type=checkbox] {
+    display: none
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) input[type=checkbox]~label {
+    display: block;
+    text-align: left;
+    background-image: url( "input checkbox initial");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 0;
+    margin: 0
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) input[type=checkbox]:checked~label {
+    background-image: url("input checkbox checked")
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) .single-checkbox {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) .single-checkbox:last-child {
+    border-bottom: none
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field:not(.switch-container) span.hint {
+    padding-bottom: 15px;
+    display: block;
+    max-width: none;
+    text-align: center
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.field.checkbox-group~div.field.checkbox-group {
+    margin-top: 10px;
+    padding-top: 25px
+}
+
+.account-page.communication-page #content #form-communication-preferences form fieldset div.submit {
+    border-top: 1px solid #f2f2f2;
+    margin: 15px 50px 0;
+    padding-top: 25px;
+    text-align: center
+}
+
+.account-page.communication-page.mobile #content #form-communication-preferences form fieldset div.field:not(.switch-container) span.hint {
+    text-align: left
+}
+
+.account-page.communication-page.mobile #content #form-communication-preferences form fieldset div.submit {
+    border-top: none;
+    margin: 15px 20px 0;
+    padding-top: 15px;
+    text-align: center
+}
+
+.account-page #content #form-change-password form {
+    padding-top: 30px
+}
+
+.account-page #content #form-change-password form fieldset div.field:not(.switch-container) {
+    margin-bottom: 35px
+}
+
+*/
+
+
+
+/* ======= "CSS" FOR #error-content  ==========
+#error-content {
+    width: 100%;
+    max-width: 1006px;
+    height: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(  "error logo here"   ) no-repeat
+}
+
+#error-content .error-block,#error-content .success-block {
+    padding: 150px 0 0 55px;
+    width: 330px
+}
+
+#error-content .error-block h1,#error-content .success-block h1 {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 1.95em;
+    text-transform: none;
+    font-weight: lighter;
+    line-height: 1.2em;
+    margin-bottom: 35px
+}
+
+#error-content .error-block p a,#error-content .success-block p a {
+    font-weight: 700
+}
+
+#error-content .error-block ul,#error-content .success-block ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    width: 310px;
+    list-style: none
+}
+
+#error-content .error-block ul li,#error-content .success-block ul li {
+    width: 50%;
+    float: left;
+    display: inline;
+    margin-bottom: 10px;
+    list-style: none
+}
+
+#error-content .error-block ul li a,#error-content .success-block ul li a {
+    text-decoration: none
+}
+
+#error-content .error-block ul li a:hover,#error-content .success-block ul li a:hover {
+    text-decoration: underline
+}
+
+*/
+
+
+.blocker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-color: rgba(45,45,45,.5);
+    text-align: center
+}
+
+.blocker:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.05em
+}
+
+.blocker.behind {
+    background-color: transparent
+}
+
+/*
+.modal {
+    display: none;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 90%;
+    background: #eee;
+    padding: 15px 30px;
+    text-align: left
+}
+
+.modal a.close-modal {
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(" close modal image here")
+}
+
+.modal-spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: #111;
+    height: 20px
+}
+
+.modal-spinner>div {
+    border-radius: 100px;
+    background-color: #fff;
+    height: 20px;
+    width: 2px;
+    margin: 0 1px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out
+}
+
+.modal-spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s
+}
+
+.modal-spinner .rect3 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+.modal-spinner .rect4 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s
+}
+
+*/
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,100%,40% {
+        -webkit-transform: scaleY(.5)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,100%,40% {
+        transform: scaleY(.5);
+        -webkit-transform: scaleY(.5)
+    }
+
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1)
+    }
+}
+
+/*
+.modal a.close-modal.close-web-app {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    background-image: url( "close modal image");
+    width: 20px;
+    height: 20px;
+    color: #2d2d2d;
+    font-weight: 600;
+    font-size: 20px;
+    text-indent: 0;
+    text-decoration: none;
+    background-size: auto
+}
+
+*/
+
+/*
+.icon-communication-preferences {
+    background-image: url( "icon-communication-preferences image");
+    width: 24px;
+    height: 24px;
+    margin: 0 auto
+}
+*/
+
+
+.preference-header,.preference-title,h1.model-content,h2.preference-title {
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    font-family: futura-pt;
+    font-weight: 700;
+    font-size: 16px
+}
+
+.preference-title {
+    text-align: center
+}
+
+.preference-title {
+    text-align: left
+}
+
+.preference-summary {
+    letter-spacing: .4px;
+    font-family: futura-pt;
+    text-align: left
+}
+
+.modal.modal-preference {
+    width: 634px;
+    padding: 0
+}
+
+.row {
+    width: 100%
+}
+
+.row::after,.row::before {
+    clear: both
+}
+
+.row-preference {
+    height: 143px;
+    margin-bottom: 14.4px;
+    background-color: #fff
+}
+
+.preference-body,.preference-image {
+    display: inline-block;
+    box-sizing: border-box
+}
+
+.preference-image {
+    width: 97px;
+    float: left
+}
+
+.preference-body {
+    width: 537px;
+    float: right;
+    padding: 24px
+}
+
+.preference-summary,.preference-title {
+    display: block
+}
+
+.preference-title {
+    max-width: 250px;
+    display: block;
+    margin-bottom: 8px
+}
+
+.preference-summary {
+    width: 390px
+}
+
+.preference-header .content,.preference-summary,.preference-title {
+    color: #2d2d2d;
+    line-height: 21px
+}
+
+.preference-summary {
+    width: 390px
+}
+
+.preference-header {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    position: relative
+}
+
+.vertical-outer-wrapper {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.vertical-middle-wrapper {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.vertical-inner-wrapper {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.vertical-preference-inner-wrapper {
+    height: 61px;
+    width: 100%
+}
+
+.preference-header .logo {
+    height: 24px;
+    margin-bottom: 16px
+}
+
+.preference-header .content {
+    height: 21px
+}
+
+.vertical-preference-image-wrapper {
+    width: 100%;
+    min-height: 14px;
+    max-height: 35px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .4px;
+    color: #5ecbb3;
+    box-sizing: border-box;
+    overflow-wrap: break-word
+}
+
+.icon-preferences {
+    width: 97px
+}
