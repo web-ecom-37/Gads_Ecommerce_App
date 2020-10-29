@@ -7,41 +7,8 @@
     font-family: 'Nunito', sans-serif,fantasy;
 }
 /* ======= header and navbar start here ========== */
-header{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    background: #2F303A;
-}
-header > div{
-    padding-left: 100px !important;
-}
-header > div h1.page-logo{
-    font-size: 2.5em;
-}
-header > div h1.page-logo > a {
-    color: #fff;
-    text-transform: capitalize;
-}
-header > div div.page-logo > a.nav-link:hover{
-    color: #fff;
-    text-decoration: none;
-}
-header > nav {
-    padding-left: 150px;
-}
-header nav > ul.nav-list{
-    list-style-type: none;
-}
-header nav > ul.nav-list > li{
-    float: left;
-    font-size: 1.6em;
-    text-transform: capitalize;
-}
-header nav > ul > li > a.nav-link{
-    color: #fff;
+li{
+    text-transform: uppercase;
 }
 /* ======= header and navbar end here  ========== */
 
@@ -407,15 +374,6 @@ table img{
         word-wrap: break-word;
     }
     .trusted-machant{display: none;}
-    header{
-        display: none;
-    }
-}
-
-
-/* ==== handburger ======= */
-.handburger, .handburgercancel{
-    display: none;
 }
 /* @media screen and (max-width: 500px) and (min-width:200px){
    header{
