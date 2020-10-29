@@ -19,7 +19,9 @@ function myfunction(button){
 
         
         content.price = price;
-        let img = button.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.src
+        // let img = button.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.src
+        let img = button.parentElement.previousElementSibling.previousElementSibling.children[0].src
+        console.log(img)
         content.img = img
         addToLocaleStorage(content)
         item.innerHTML = `item ${name} was added to the cart`
