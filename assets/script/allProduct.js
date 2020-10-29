@@ -14,7 +14,9 @@ function myfunction(button){
        
         content.name = name;
         // let price = button.previousSibling.previousSibling.innerHTML
-        let price = button.parentElement.previousElementSibling.children[2].innerHTML
+        // let price = button.parentElement.previousElementSibling.children[2].innerHTML
+        let price = button.parentElement.previousElementSibling.children[2].children[1].innerHTML
+
         console.log(price)
 
         
