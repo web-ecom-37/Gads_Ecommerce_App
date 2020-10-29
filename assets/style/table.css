@@ -44,3 +44,9 @@ table img{
 .hide{
     display:none;
 }
+
+
+.order div{
+    display: flex;
+    justify-content: space-evenly;
+}
